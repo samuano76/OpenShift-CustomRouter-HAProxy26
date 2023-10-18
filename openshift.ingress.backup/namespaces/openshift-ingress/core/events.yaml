@@ -1,0 +1,1417 @@
+---
+apiVersion: v1
+items:
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-12T11:21:19.170034Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-default-84d94fd67d-58zql
+    namespace: openshift-ingress
+    resourceVersion: "23699468"
+    uid: 272efda5-ab5b-4eb7-ac8c-45d4f53822b1
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t have free ports for the requested
+    pod ports, 3 node(s) had untolerated taint {node-role.kubernetes.io/master: }.
+    preemption: 0/6 nodes are available: 3 Preemption is not helpful for scheduling,
+    3 node(s) didn''t have free ports for the requested pod ports.'
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:19Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:21:19Z"
+    name: router-default-84d94fd67d-58zql.178d5842f3ceac5e
+    namespace: openshift-ingress
+    resourceVersion: "23699471"
+    uid: 9eafd524-efe2-4f74-92fc-deb7ed4fdb2b
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-10-12T11:21:34.175356Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-default-84d94fd67d-58zql
+    namespace: openshift-ingress
+    resourceVersion: "23699473"
+    uid: 272efda5-ab5b-4eb7-ac8c-45d4f53822b1
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-ingress/router-default-84d94fd67d-58zql
+    to worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:34Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:21:34Z"
+    name: router-default-84d94fd67d-58zql.178d58467231c5e2
+    namespace: openshift-ingress
+    resourceVersion: "23699633"
+    uid: b8e63d76-c71f-4383-bdab-d151969113ff
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:34Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-84d94fd67d-58zql
+    namespace: openshift-ingress
+    resourceVersion: "23699631"
+    uid: 272efda5-ab5b-4eb7-ac8c-45d4f53822b1
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:34Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:266645aa07a4e0963ec7cdca4d87c748bf3a459d279f1c43093208ee6cd8eceb"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:34Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:34Z"
+    name: router-default-84d94fd67d-58zql.178d5846878194f4
+    namespace: openshift-ingress
+    resourceVersion: "23699640"
+    uid: 153ced98-b1c9-4109-9993-35387d011fc5
+  reason: Pulled
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:34Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-84d94fd67d-58zql
+    namespace: openshift-ingress
+    resourceVersion: "23699631"
+    uid: 272efda5-ab5b-4eb7-ac8c-45d4f53822b1
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:34Z"
+  message: Created container router
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:34Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:34Z"
+    name: router-default-84d94fd67d-58zql.178d58468f7163d3
+    namespace: openshift-ingress
+    resourceVersion: "23699641"
+    uid: 7e70e7fc-dc7f-4508-ba35-d0c4acc896f5
+  reason: Created
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:34Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-84d94fd67d-58zql
+    namespace: openshift-ingress
+    resourceVersion: "23699631"
+    uid: 272efda5-ab5b-4eb7-ac8c-45d4f53822b1
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:34Z"
+  message: Started container router
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:34Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:34Z"
+    name: router-default-84d94fd67d-58zql.178d5846912b4616
+    namespace: openshift-ingress
+    resourceVersion: "23699642"
+    uid: 026490fc-5398-4f3d-a08c-a3008cf55dc3
+  reason: Started
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-10-12T11:20:47.485506Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-default-84d94fd67d-n6f27
+    namespace: openshift-ingress
+    resourceVersion: "23699081"
+    uid: f0923955-9283-480a-8695-0880daa98610
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-ingress/router-default-84d94fd67d-n6f27
+    to worker-2.labcluster3.lab.upshift.rdu2.redhat.com
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-84d94fd67d-n6f27.178d583b93432807
+    namespace: openshift-ingress
+    resourceVersion: "23699088"
+    uid: 19f9138c-395f-44d2-a7fc-08a6ae52c6f9
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-84d94fd67d-n6f27
+    namespace: openshift-ingress
+    resourceVersion: "23699085"
+    uid: f0923955-9283-480a-8695-0880daa98610
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:266645aa07a4e0963ec7cdca4d87c748bf3a459d279f1c43093208ee6cd8eceb"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-84d94fd67d-n6f27.178d583ba758737b
+    namespace: openshift-ingress
+    resourceVersion: "23699101"
+    uid: aa1572e9-b27c-44b1-bab4-56d6aa0858ae
+  reason: Pulled
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-2.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-84d94fd67d-n6f27
+    namespace: openshift-ingress
+    resourceVersion: "23699085"
+    uid: f0923955-9283-480a-8695-0880daa98610
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: Created container router
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-84d94fd67d-n6f27.178d583bad053154
+    namespace: openshift-ingress
+    resourceVersion: "23699102"
+    uid: 71b6ef90-5423-4c81-9f4e-04fa6558c3a8
+  reason: Created
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-2.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-84d94fd67d-n6f27
+    namespace: openshift-ingress
+    resourceVersion: "23699085"
+    uid: f0923955-9283-480a-8695-0880daa98610
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: Started container router
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-84d94fd67d-n6f27.178d583baf548d73
+    namespace: openshift-ingress
+    resourceVersion: "23699105"
+    uid: 173830a2-4a08-4d59-9809-311ebaa72161
+  reason: Started
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-2.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-default-84d94fd67d
+    namespace: openshift-ingress
+    resourceVersion: "23699073"
+    uid: d7730584-b3a2-4c4b-b4f4-4ac6c38a32fa
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: 'Created pod: router-default-84d94fd67d-n6f27'
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-84d94fd67d.178d583b9236d275
+    namespace: openshift-ingress
+    resourceVersion: "23699083"
+    uid: 431a87b7-6917-43c6-9c8c-eb812513244f
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:19Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-default-84d94fd67d
+    namespace: openshift-ingress
+    resourceVersion: "23699463"
+    uid: d7730584-b3a2-4c4b-b4f4-4ac6c38a32fa
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:19Z"
+  message: 'Created pod: router-default-84d94fd67d-58zql'
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:19Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:21:19Z"
+    name: router-default-84d94fd67d.178d5842f3802db0
+    namespace: openshift-ingress
+    resourceVersion: "23699469"
+    uid: db833e76-d9b5-497d-9dff-d3c353add4bf
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-2gbqr
+    namespace: openshift-ingress
+    resourceVersion: "22865322"
+    uid: 1721b04c-5154-48ce-a11d-19657b1701e8
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: Stopping container router
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-c469b7b4b-2gbqr.178d583b8fca9022
+    namespace: openshift-ingress
+    resourceVersion: "23699079"
+    uid: e28df771-4d86-46ad-96b4-77a78357bf86
+  reason: Killing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 4
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:53Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-2gbqr
+    namespace: openshift-ingress
+    resourceVersion: "22865322"
+    uid: 1721b04c-5154-48ce-a11d-19657b1701e8
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:23Z"
+  message: |+
+    Readiness probe error: HTTP probe failed with statuscode: 500
+    body: [+]backend-http ok
+    [+]has-synced ok
+    [-]process-running failed: reason withheld
+    healthz check failed
+
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:53Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:23Z"
+    name: router-default-c469b7b4b-2gbqr.178d583ceab07818
+    namespace: openshift-ingress
+    resourceVersion: "23699524"
+    uid: a9b31d3e-a0fb-4e22-ae90-c8d01a9a7642
+  reason: ProbeError
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Warning
+- apiVersion: v1
+  count: 5
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:53Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-2gbqr
+    namespace: openshift-ingress
+    resourceVersion: "22865322"
+    uid: 1721b04c-5154-48ce-a11d-19657b1701e8
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:33Z"
+  message: 'Readiness probe failed: HTTP probe failed with statuscode: 500'
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:53Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:33Z"
+    name: router-default-c469b7b4b-2gbqr.178d583ceab0d211
+    namespace: openshift-ingress
+    resourceVersion: "23699623"
+    uid: 743fcf92-cd92-43b8-9c4e-0a8486ebe2ef
+  reason: Unhealthy
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:33Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-2gbqr
+    namespace: openshift-ingress
+    resourceVersion: "22865322"
+    uid: 1721b04c-5154-48ce-a11d-19657b1701e8
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:33Z"
+  message: |+
+    Readiness probe error: HTTP probe failed with statuscode: 500
+    body: [-]backend-http failed: reason withheld
+    [+]has-synced ok
+    [-]process-running failed: reason withheld
+    healthz check failed
+
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:33Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:33Z"
+    name: router-default-c469b7b4b-2gbqr.178d58463aa500d2
+    namespace: openshift-ingress
+    resourceVersion: "23699621"
+    uid: 056620dd-86af-4011-9c47-3a5afade9a2f
+  reason: ProbeError
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:19Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-m48mt
+    namespace: openshift-ingress
+    resourceVersion: "22281888"
+    uid: 7067570b-22b7-42d5-a5ac-f256061f9d1d
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:19Z"
+  message: Stopping container router
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:19Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:19Z"
+    name: router-default-c469b7b4b-m48mt.178d5842f21026fe
+    namespace: openshift-ingress
+    resourceVersion: "23699464"
+    uid: ff0914d6-eb88-4846-bf8d-526e120e190b
+  reason: Killing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-1.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Normal
+- apiVersion: v1
+  count: 4
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:24Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-m48mt
+    namespace: openshift-ingress
+    resourceVersion: "22281888"
+    uid: 7067570b-22b7-42d5-a5ac-f256061f9d1d
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:54Z"
+  message: |+
+    Readiness probe error: HTTP probe failed with statuscode: 500
+    body: [+]backend-http ok
+    [+]has-synced ok
+    [-]process-running failed: reason withheld
+    healthz check failed
+
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:24Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:21:54Z"
+    name: router-default-c469b7b4b-m48mt.178d584443d09c1c
+    namespace: openshift-ingress
+    resourceVersion: "23699866"
+    uid: d9cf9df1-3cab-404d-90e7-bdc4e99e5ff8
+  reason: ProbeError
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-1.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Warning
+- apiVersion: v1
+  count: 5
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:24Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-m48mt
+    namespace: openshift-ingress
+    resourceVersion: "22281888"
+    uid: 7067570b-22b7-42d5-a5ac-f256061f9d1d
+  kind: Event
+  lastTimestamp: "2023-10-12T11:22:04Z"
+  message: 'Readiness probe failed: HTTP probe failed with statuscode: 500'
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:24Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:22:04Z"
+    name: router-default-c469b7b4b-m48mt.178d584443d16690
+    namespace: openshift-ingress
+    resourceVersion: "23699974"
+    uid: 374c71a8-bf5c-4daf-8c17-7da22b302b21
+  reason: Unhealthy
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-1.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:22:04Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{router}
+    kind: Pod
+    name: router-default-c469b7b4b-m48mt
+    namespace: openshift-ingress
+    resourceVersion: "22281888"
+    uid: 7067570b-22b7-42d5-a5ac-f256061f9d1d
+  kind: Event
+  lastTimestamp: "2023-10-12T11:22:04Z"
+  message: |+
+    Readiness probe error: HTTP probe failed with statuscode: 500
+    body: [-]backend-http failed: reason withheld
+    [+]has-synced ok
+    [-]process-running failed: reason withheld
+    healthz check failed
+
+  metadata:
+    creationTimestamp: "2023-10-12T11:22:04Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+          f:host: {}
+        f:type: {}
+      manager: kubelet
+      operation: Update
+      time: "2023-10-12T11:22:04Z"
+    name: router-default-c469b7b4b-m48mt.178d584d8f82e8c7
+    namespace: openshift-ingress
+    resourceVersion: "23699973"
+    uid: da33950a-f7c2-4238-a594-77b74aba0ec1
+  reason: ProbeError
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: worker-1.labcluster3.lab.upshift.rdu2.redhat.com
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-default-c469b7b4b
+    namespace: openshift-ingress
+    resourceVersion: "23699066"
+    uid: 32a8f0e2-78b9-4a7d-a303-094c4e6e8e5c
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: 'Deleted pod: router-default-c469b7b4b-2gbqr'
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default-c469b7b4b.178d583b8eb572dd
+    namespace: openshift-ingress
+    resourceVersion: "23699074"
+    uid: 5c0dc5dd-31f2-4b4a-8d2e-aa32ad5a7625
+  reason: SuccessfulDelete
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:19Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-default-c469b7b4b
+    namespace: openshift-ingress
+    resourceVersion: "23699454"
+    uid: 32a8f0e2-78b9-4a7d-a303-094c4e6e8e5c
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:19Z"
+  message: 'Deleted pod: router-default-c469b7b4b-m48mt'
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:19Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:21:19Z"
+    name: router-default-c469b7b4b.178d5842f19ef68b
+    namespace: openshift-ingress
+    resourceVersion: "23699461"
+    uid: 6e82fd05-e3a0-4325-aa57-172a81a702bc
+  reason: SuccessfulDelete
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: router-default
+    namespace: openshift-ingress
+    resourceVersion: "23699063"
+    uid: a44770ef-00da-4b58-8e1e-2ec004f78034
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: Scaled down replica set router-default-c469b7b4b to 1 from 2
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default.178d583b8e68b669
+    namespace: openshift-ingress
+    resourceVersion: "23699069"
+    uid: 01ab6f0c-9b71-491c-91ea-0955949b6485
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:20:47Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: router-default
+    namespace: openshift-ingress
+    resourceVersion: "23699065"
+    uid: a44770ef-00da-4b58-8e1e-2ec004f78034
+  kind: Event
+  lastTimestamp: "2023-10-12T11:20:47Z"
+  message: Scaled up replica set router-default-84d94fd67d to 1 from 0
+  metadata:
+    creationTimestamp: "2023-10-12T11:20:47Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    name: router-default.178d583b8fe37b98
+    namespace: openshift-ingress
+    resourceVersion: "23699077"
+    uid: 23c10754-5c1d-4f66-b014-be4a6a5897fc
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:19Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: router-default
+    namespace: openshift-ingress
+    resourceVersion: "23699124"
+    uid: a44770ef-00da-4b58-8e1e-2ec004f78034
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:19Z"
+  message: Scaled down replica set router-default-c469b7b4b to 0 from 1
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:19Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:21:19Z"
+    name: router-default.178d5842f0ea24ab
+    namespace: openshift-ingress
+    resourceVersion: "23699455"
+    uid: 23e75e81-6df4-4ef9-a1af-dd0fc0ac9769
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:21:19Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: router-default
+    namespace: openshift-ingress
+    resourceVersion: "23699456"
+    uid: a44770ef-00da-4b58-8e1e-2ec004f78034
+  kind: Event
+  lastTimestamp: "2023-10-12T11:21:19Z"
+  message: Scaled up replica set router-default-84d94fd67d to 2 from 1
+  metadata:
+    creationTimestamp: "2023-10-12T11:21:19Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:21:19Z"
+    name: router-default.178d5842f25dc429
+    namespace: openshift-ingress
+    resourceVersion: "23699465"
+    uid: 15b1bd9c-1b00-4fd7-acc5-380baaa97e77
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-12T11:24:21.982783Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-sharded-745ff97cc9-9nwjh
+    namespace: openshift-ingress
+    resourceVersion: "23701433"
+    uid: ad84e0fa-98af-42a3-a11a-4c2d3e1ec6ff
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption:
+    0/6 nodes are available: 6 Preemption is not helpful for scheduling.'
+  metadata:
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    name: router-sharded-745ff97cc9-9nwjh.178d586d844bd0da
+    namespace: openshift-ingress
+    resourceVersion: "23701440"
+    uid: b5f8b994-1422-43ed-8977-47c9ec3bd106
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-12T11:29:34.932422Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-sharded-745ff97cc9-9nwjh
+    namespace: openshift-ingress
+    resourceVersion: "23701441"
+    uid: ad84e0fa-98af-42a3-a11a-4c2d3e1ec6ff
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption:
+    0/6 nodes are available: 6 Preemption is not helpful for scheduling.'
+  metadata:
+    creationTimestamp: "2023-10-12T11:29:34Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:29:34Z"
+    name: router-sharded-745ff97cc9-9nwjh.178d58b6618c5aae
+    namespace: openshift-ingress
+    resourceVersion: "23704677"
+    uid: a33f6f20-d144-4f3f-8c64-f0f58d8abc66
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-12T11:24:21.963595Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-sharded-745ff97cc9-wcttj
+    namespace: openshift-ingress
+    resourceVersion: "23701431"
+    uid: 8dc8f161-7bfc-462f-ae24-c24dd8ce48f3
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption:
+    0/6 nodes are available: 6 Preemption is not helpful for scheduling.'
+  metadata:
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    name: router-sharded-745ff97cc9-wcttj.178d586d83270623
+    namespace: openshift-ingress
+    resourceVersion: "23701436"
+    uid: 90d223f6-fe95-40ac-b6ea-34716494638f
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-12T11:29:34.932174Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-sharded-745ff97cc9-wcttj
+    namespace: openshift-ingress
+    resourceVersion: "23701437"
+    uid: 8dc8f161-7bfc-462f-ae24-c24dd8ce48f3
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption:
+    0/6 nodes are available: 6 Preemption is not helpful for scheduling.'
+  metadata:
+    creationTimestamp: "2023-10-12T11:29:34Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-12T11:29:34Z"
+    name: router-sharded-745ff97cc9-wcttj.178d58b661889d5f
+    namespace: openshift-ingress
+    resourceVersion: "23704676"
+    uid: c5b0a0dd-623c-49a8-9776-c40fc90b3edf
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:24:21Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-sharded-745ff97cc9
+    namespace: openshift-ingress
+    resourceVersion: "23701423"
+    uid: 5fb8147b-1a65-4dcc-86f3-2538d8d363c5
+  kind: Event
+  lastTimestamp: "2023-10-12T11:24:21Z"
+  message: 'Created pod: router-sharded-745ff97cc9-wcttj'
+  metadata:
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    name: router-sharded-745ff97cc9.178d586d817990b5
+    namespace: openshift-ingress
+    resourceVersion: "23701432"
+    uid: 4b1f4853-019f-4781-845a-833950d1e9a5
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:24:21Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-sharded-745ff97cc9
+    namespace: openshift-ingress
+    resourceVersion: "23701423"
+    uid: 5fb8147b-1a65-4dcc-86f3-2538d8d363c5
+  kind: Event
+  lastTimestamp: "2023-10-12T11:24:21Z"
+  message: 'Created pod: router-sharded-745ff97cc9-9nwjh'
+  metadata:
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    name: router-sharded-745ff97cc9.178d586d8343dce7
+    namespace: openshift-ingress
+    resourceVersion: "23701435"
+    uid: 315a9337-3e68-4f67-8830-89f6de1f0fce
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-12T11:24:21Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: router-sharded
+    namespace: openshift-ingress
+    resourceVersion: "23701422"
+    uid: e3e7d8bd-57a5-4bdf-938e-809d508c9dc4
+  kind: Event
+  lastTimestamp: "2023-10-12T11:24:21Z"
+  message: Scaled up replica set router-sharded-745ff97cc9 to 2
+  metadata:
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    name: router-sharded.178d586d7f0317ea
+    namespace: openshift-ingress
+    resourceVersion: "23701426"
+    uid: 65d8db3a-a72d-4095-a6c0-6a9c1afd948a
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+kind: EventList
+metadata:
+  resourceVersion: "23705150"

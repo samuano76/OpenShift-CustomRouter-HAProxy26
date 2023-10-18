@@ -1,0 +1,1082 @@
+---
+apiVersion: apps/v1
+items:
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "2"
+    creationTimestamp: "2023-08-31T16:28:37Z"
+    generation: 2
+    labels:
+      ingresscontroller.operator.openshift.io/owning-ingresscontroller: default
+    managedFields:
+    - apiVersion: apps/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:ingresscontroller.operator.openshift.io/owning-ingresscontroller: {}
+        f:spec:
+          f:minReadySeconds: {}
+          f:progressDeadlineSeconds: {}
+          f:replicas: {}
+          f:revisionHistoryLimit: {}
+          f:selector: {}
+          f:strategy:
+            f:rollingUpdate:
+              .: {}
+              f:maxSurge: {}
+              f:maxUnavailable: {}
+            f:type: {}
+          f:template:
+            f:metadata:
+              f:annotations:
+                .: {}
+                f:target.workload.openshift.io/management: {}
+                f:unsupported.do-not-use.openshift.io/override-liveness-grace-period-seconds: {}
+              f:labels:
+                .: {}
+                f:ingresscontroller.operator.openshift.io/deployment-ingresscontroller: {}
+                f:ingresscontroller.operator.openshift.io/hash: {}
+            f:spec:
+              f:containers:
+                k:{"name":"router"}:
+                  .: {}
+                  f:env:
+                    .: {}
+                    k:{"name":"DEFAULT_CERTIFICATE_DIR"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"DEFAULT_DESTINATION_CA_PATH"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"RELOAD_INTERVAL"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTE_LABELS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_ALLOW_WILDCARD_ROUTES"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_CANONICAL_HOSTNAME"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_CIPHERS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_CIPHERSUITES"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_DISABLE_HTTP2"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_DISABLE_NAMESPACE_OWNERSHIP_CHECK"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_DOMAIN"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_LOAD_BALANCE_ALGORITHM"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_METRICS_TLS_CERT_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_METRICS_TLS_KEY_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_METRICS_TYPE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_HTTP_PORT"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_HTTPS_PORT"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_NAME"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_NAMESPACE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SET_FORWARDED_HEADERS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_TCP_BALANCE_SCHEME"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_THREADS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"SSL_MIN_VERSION"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"STATS_PASSWORD_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"STATS_PORT"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"STATS_USERNAME_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                  f:image: {}
+                  f:imagePullPolicy: {}
+                  f:livenessProbe:
+                    .: {}
+                    f:failureThreshold: {}
+                    f:httpGet:
+                      .: {}
+                      f:host: {}
+                      f:path: {}
+                      f:port: {}
+                      f:scheme: {}
+                    f:periodSeconds: {}
+                    f:successThreshold: {}
+                    f:timeoutSeconds: {}
+                  f:name: {}
+                  f:ports:
+                    .: {}
+                    k:{"containerPort":80,"protocol":"TCP"}:
+                      .: {}
+                      f:containerPort: {}
+                      f:hostPort: {}
+                      f:name: {}
+                      f:protocol: {}
+                    k:{"containerPort":443,"protocol":"TCP"}:
+                      .: {}
+                      f:containerPort: {}
+                      f:hostPort: {}
+                      f:name: {}
+                      f:protocol: {}
+                    k:{"containerPort":1936,"protocol":"TCP"}:
+                      .: {}
+                      f:containerPort: {}
+                      f:hostPort: {}
+                      f:name: {}
+                      f:protocol: {}
+                  f:readinessProbe:
+                    .: {}
+                    f:failureThreshold: {}
+                    f:httpGet:
+                      .: {}
+                      f:host: {}
+                      f:path: {}
+                      f:port: {}
+                      f:scheme: {}
+                    f:periodSeconds: {}
+                    f:successThreshold: {}
+                    f:timeoutSeconds: {}
+                  f:resources:
+                    .: {}
+                    f:requests:
+                      .: {}
+                      f:cpu: {}
+                      f:memory: {}
+                  f:securityContext:
+                    .: {}
+                    f:allowPrivilegeEscalation: {}
+                  f:startupProbe:
+                    .: {}
+                    f:failureThreshold: {}
+                    f:httpGet:
+                      .: {}
+                      f:host: {}
+                      f:path: {}
+                      f:port: {}
+                      f:scheme: {}
+                    f:periodSeconds: {}
+                    f:successThreshold: {}
+                    f:timeoutSeconds: {}
+                  f:terminationMessagePath: {}
+                  f:terminationMessagePolicy: {}
+                  f:volumeMounts:
+                    .: {}
+                    k:{"mountPath":"/etc/pki/tls/metrics-certs"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+                    k:{"mountPath":"/etc/pki/tls/private"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+                    k:{"mountPath":"/var/lib/haproxy/conf/metrics-auth"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+                    k:{"mountPath":"/var/run/configmaps/service-ca"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+              f:dnsPolicy: {}
+              f:hostNetwork: {}
+              f:nodeSelector: {}
+              f:priorityClassName: {}
+              f:restartPolicy: {}
+              f:schedulerName: {}
+              f:securityContext: {}
+              f:serviceAccount: {}
+              f:serviceAccountName: {}
+              f:terminationGracePeriodSeconds: {}
+              f:topologySpreadConstraints:
+                .: {}
+                k:{"topologyKey":"topology.kubernetes.io/zone","whenUnsatisfiable":"ScheduleAnyway"}:
+                  .: {}
+                  f:labelSelector: {}
+                  f:maxSkew: {}
+                  f:topologyKey: {}
+                  f:whenUnsatisfiable: {}
+              f:volumes:
+                .: {}
+                k:{"name":"default-certificate"}:
+                  .: {}
+                  f:name: {}
+                  f:secret:
+                    .: {}
+                    f:defaultMode: {}
+                    f:secretName: {}
+                k:{"name":"metrics-certs"}:
+                  .: {}
+                  f:name: {}
+                  f:secret:
+                    .: {}
+                    f:defaultMode: {}
+                    f:secretName: {}
+                k:{"name":"service-ca-bundle"}:
+                  .: {}
+                  f:configMap:
+                    .: {}
+                    f:defaultMode: {}
+                    f:items: {}
+                    f:name: {}
+                    f:optional: {}
+                  f:name: {}
+                k:{"name":"stats-auth"}:
+                  .: {}
+                  f:name: {}
+                  f:secret:
+                    .: {}
+                    f:defaultMode: {}
+                    f:secretName: {}
+      manager: ingress-operator
+      operation: Update
+      time: "2023-10-12T11:20:47Z"
+    - apiVersion: apps/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:deployment.kubernetes.io/revision: {}
+        f:status:
+          f:availableReplicas: {}
+          f:conditions:
+            .: {}
+            k:{"type":"Available"}:
+              .: {}
+              f:lastTransitionTime: {}
+              f:lastUpdateTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"Progressing"}:
+              .: {}
+              f:lastTransitionTime: {}
+              f:lastUpdateTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+          f:observedGeneration: {}
+          f:readyReplicas: {}
+          f:replicas: {}
+          f:updatedReplicas: {}
+      manager: kube-controller-manager
+      operation: Update
+      subresource: status
+      time: "2023-10-12T11:22:05Z"
+    name: router-default
+    namespace: openshift-ingress
+    resourceVersion: "23699995"
+    uid: a44770ef-00da-4b58-8e1e-2ec004f78034
+  spec:
+    minReadySeconds: 30
+    progressDeadlineSeconds: 600
+    replicas: 2
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
+    strategy:
+      rollingUpdate:
+        maxSurge: 0
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        annotations:
+          target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
+          unsupported.do-not-use.openshift.io/override-liveness-grace-period-seconds: "10"
+        creationTimestamp: null
+        labels:
+          ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
+          ingresscontroller.operator.openshift.io/hash: 6d9db948
+      spec:
+        containers:
+        - env:
+          - name: DEFAULT_CERTIFICATE_DIR
+            value: /etc/pki/tls/private
+          - name: DEFAULT_DESTINATION_CA_PATH
+            value: /var/run/configmaps/service-ca/service-ca.crt
+          - name: RELOAD_INTERVAL
+            value: 5s
+          - name: ROUTER_ALLOW_WILDCARD_ROUTES
+            value: "false"
+          - name: ROUTER_CANONICAL_HOSTNAME
+            value: router-default.apps.labcluster3.lab.upshift.rdu2.redhat.com
+          - name: ROUTER_CIPHERS
+            value: ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+          - name: ROUTER_CIPHERSUITES
+            value: TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+          - name: ROUTER_DISABLE_HTTP2
+            value: "true"
+          - name: ROUTER_DISABLE_NAMESPACE_OWNERSHIP_CHECK
+            value: "false"
+          - name: ROUTER_DOMAIN
+            value: apps.labcluster3.lab.upshift.rdu2.redhat.com
+          - name: ROUTER_LOAD_BALANCE_ALGORITHM
+            value: random
+          - name: ROUTER_METRICS_TLS_CERT_FILE
+            value: /etc/pki/tls/metrics-certs/tls.crt
+          - name: ROUTER_METRICS_TLS_KEY_FILE
+            value: /etc/pki/tls/metrics-certs/tls.key
+          - name: ROUTER_METRICS_TYPE
+            value: haproxy
+          - name: ROUTER_SERVICE_HTTPS_PORT
+            value: "443"
+          - name: ROUTER_SERVICE_HTTP_PORT
+            value: "80"
+          - name: ROUTER_SERVICE_NAME
+            value: default
+          - name: ROUTER_SERVICE_NAMESPACE
+            value: openshift-ingress
+          - name: ROUTER_SET_FORWARDED_HEADERS
+            value: append
+          - name: ROUTER_TCP_BALANCE_SCHEME
+            value: source
+          - name: ROUTER_THREADS
+            value: "4"
+          - name: ROUTE_LABELS
+            value: type notin (sharded)
+          - name: SSL_MIN_VERSION
+            value: TLSv1.2
+          - name: STATS_PASSWORD_FILE
+            value: /var/lib/haproxy/conf/metrics-auth/statsPassword
+          - name: STATS_PORT
+            value: "1936"
+          - name: STATS_USERNAME_FILE
+            value: /var/lib/haproxy/conf/metrics-auth/statsUsername
+          image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:266645aa07a4e0963ec7cdca4d87c748bf3a459d279f1c43093208ee6cd8eceb
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              host: localhost
+              path: /healthz
+              port: 1936
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          name: router
+          ports:
+          - containerPort: 80
+            hostPort: 80
+            name: http
+            protocol: TCP
+          - containerPort: 443
+            hostPort: 443
+            name: https
+            protocol: TCP
+          - containerPort: 1936
+            hostPort: 1936
+            name: metrics
+            protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              host: localhost
+              path: /healthz/ready
+              port: 1936
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+          securityContext:
+            allowPrivilegeEscalation: true
+          startupProbe:
+            failureThreshold: 120
+            httpGet:
+              host: localhost
+              path: /healthz/ready
+              port: 1936
+              scheme: HTTP
+            periodSeconds: 1
+            successThreshold: 1
+            timeoutSeconds: 1
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: FallbackToLogsOnError
+          volumeMounts:
+          - mountPath: /etc/pki/tls/private
+            name: default-certificate
+            readOnly: true
+          - mountPath: /var/run/configmaps/service-ca
+            name: service-ca-bundle
+            readOnly: true
+          - mountPath: /var/lib/haproxy/conf/metrics-auth
+            name: stats-auth
+            readOnly: true
+          - mountPath: /etc/pki/tls/metrics-certs
+            name: metrics-certs
+            readOnly: true
+        dnsPolicy: ClusterFirstWithHostNet
+        hostNetwork: true
+        nodeSelector:
+          kubernetes.io/os: linux
+          node-role.kubernetes.io/worker: ""
+        priorityClassName: system-cluster-critical
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        serviceAccount: router
+        serviceAccountName: router
+        terminationGracePeriodSeconds: 3600
+        topologySpreadConstraints:
+        - labelSelector:
+            matchExpressions:
+            - key: ingresscontroller.operator.openshift.io/hash
+              operator: In
+              values:
+              - 6d9db948
+          maxSkew: 1
+          topologyKey: topology.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
+        volumes:
+        - name: default-certificate
+          secret:
+            defaultMode: 420
+            secretName: router-certs-default
+        - configMap:
+            defaultMode: 420
+            items:
+            - key: service-ca.crt
+              path: service-ca.crt
+            name: service-ca-bundle
+            optional: false
+          name: service-ca-bundle
+        - name: stats-auth
+          secret:
+            defaultMode: 420
+            secretName: router-stats-default
+        - name: metrics-certs
+          secret:
+            defaultMode: 420
+            secretName: router-metrics-certs-default
+  status:
+    availableReplicas: 2
+    conditions:
+    - lastTransitionTime: "2023-08-31T16:36:04Z"
+      lastUpdateTime: "2023-08-31T16:36:04Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2023-08-31T16:28:37Z"
+      lastUpdateTime: "2023-10-12T11:22:05Z"
+      message: ReplicaSet "router-default-84d94fd67d" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 2
+    readyReplicas: 2
+    replicas: 2
+    updatedReplicas: 2
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    generation: 1
+    labels:
+      ingresscontroller.operator.openshift.io/owning-ingresscontroller: sharded
+    managedFields:
+    - apiVersion: apps/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:ingresscontroller.operator.openshift.io/owning-ingresscontroller: {}
+        f:spec:
+          f:minReadySeconds: {}
+          f:progressDeadlineSeconds: {}
+          f:replicas: {}
+          f:revisionHistoryLimit: {}
+          f:selector: {}
+          f:strategy:
+            f:rollingUpdate:
+              .: {}
+              f:maxSurge: {}
+              f:maxUnavailable: {}
+            f:type: {}
+          f:template:
+            f:metadata:
+              f:annotations:
+                .: {}
+                f:target.workload.openshift.io/management: {}
+                f:unsupported.do-not-use.openshift.io/override-liveness-grace-period-seconds: {}
+              f:labels:
+                .: {}
+                f:ingresscontroller.operator.openshift.io/deployment-ingresscontroller: {}
+                f:ingresscontroller.operator.openshift.io/hash: {}
+            f:spec:
+              f:containers:
+                k:{"name":"router"}:
+                  .: {}
+                  f:env:
+                    .: {}
+                    k:{"name":"DEFAULT_CERTIFICATE_DIR"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"DEFAULT_DESTINATION_CA_PATH"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"RELOAD_INTERVAL"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTE_LABELS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_ALLOW_WILDCARD_ROUTES"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_CANONICAL_HOSTNAME"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_CIPHERS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_CIPHERSUITES"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_DISABLE_HTTP2"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_DISABLE_NAMESPACE_OWNERSHIP_CHECK"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_DOMAIN"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_LOAD_BALANCE_ALGORITHM"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_METRICS_TLS_CERT_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_METRICS_TLS_KEY_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_METRICS_TYPE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_HTTP_PORT"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_HTTPS_PORT"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_NAME"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SERVICE_NAMESPACE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_SET_FORWARDED_HEADERS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_TCP_BALANCE_SCHEME"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"ROUTER_THREADS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"SSL_MIN_VERSION"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"STATS_PASSWORD_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"STATS_PORT"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"STATS_USERNAME_FILE"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                  f:image: {}
+                  f:imagePullPolicy: {}
+                  f:livenessProbe:
+                    .: {}
+                    f:failureThreshold: {}
+                    f:httpGet:
+                      .: {}
+                      f:host: {}
+                      f:path: {}
+                      f:port: {}
+                      f:scheme: {}
+                    f:periodSeconds: {}
+                    f:successThreshold: {}
+                    f:timeoutSeconds: {}
+                  f:name: {}
+                  f:ports:
+                    .: {}
+                    k:{"containerPort":80,"protocol":"TCP"}:
+                      .: {}
+                      f:containerPort: {}
+                      f:hostPort: {}
+                      f:name: {}
+                      f:protocol: {}
+                    k:{"containerPort":443,"protocol":"TCP"}:
+                      .: {}
+                      f:containerPort: {}
+                      f:hostPort: {}
+                      f:name: {}
+                      f:protocol: {}
+                    k:{"containerPort":1936,"protocol":"TCP"}:
+                      .: {}
+                      f:containerPort: {}
+                      f:hostPort: {}
+                      f:name: {}
+                      f:protocol: {}
+                  f:readinessProbe:
+                    .: {}
+                    f:failureThreshold: {}
+                    f:httpGet:
+                      .: {}
+                      f:host: {}
+                      f:path: {}
+                      f:port: {}
+                      f:scheme: {}
+                    f:periodSeconds: {}
+                    f:successThreshold: {}
+                    f:timeoutSeconds: {}
+                  f:resources:
+                    .: {}
+                    f:requests:
+                      .: {}
+                      f:cpu: {}
+                      f:memory: {}
+                  f:securityContext:
+                    .: {}
+                    f:allowPrivilegeEscalation: {}
+                  f:startupProbe:
+                    .: {}
+                    f:failureThreshold: {}
+                    f:httpGet:
+                      .: {}
+                      f:host: {}
+                      f:path: {}
+                      f:port: {}
+                      f:scheme: {}
+                    f:periodSeconds: {}
+                    f:successThreshold: {}
+                    f:timeoutSeconds: {}
+                  f:terminationMessagePath: {}
+                  f:terminationMessagePolicy: {}
+                  f:volumeMounts:
+                    .: {}
+                    k:{"mountPath":"/etc/pki/tls/metrics-certs"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+                    k:{"mountPath":"/etc/pki/tls/private"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+                    k:{"mountPath":"/var/lib/haproxy/conf/metrics-auth"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+                    k:{"mountPath":"/var/run/configmaps/service-ca"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                      f:readOnly: {}
+              f:dnsPolicy: {}
+              f:hostNetwork: {}
+              f:nodeSelector: {}
+              f:priorityClassName: {}
+              f:restartPolicy: {}
+              f:schedulerName: {}
+              f:securityContext: {}
+              f:serviceAccount: {}
+              f:serviceAccountName: {}
+              f:terminationGracePeriodSeconds: {}
+              f:topologySpreadConstraints:
+                .: {}
+                k:{"topologyKey":"topology.kubernetes.io/zone","whenUnsatisfiable":"ScheduleAnyway"}:
+                  .: {}
+                  f:labelSelector: {}
+                  f:maxSkew: {}
+                  f:topologyKey: {}
+                  f:whenUnsatisfiable: {}
+              f:volumes:
+                .: {}
+                k:{"name":"default-certificate"}:
+                  .: {}
+                  f:name: {}
+                  f:secret:
+                    .: {}
+                    f:defaultMode: {}
+                    f:secretName: {}
+                k:{"name":"metrics-certs"}:
+                  .: {}
+                  f:name: {}
+                  f:secret:
+                    .: {}
+                    f:defaultMode: {}
+                    f:secretName: {}
+                k:{"name":"service-ca-bundle"}:
+                  .: {}
+                  f:configMap:
+                    .: {}
+                    f:defaultMode: {}
+                    f:items: {}
+                    f:name: {}
+                    f:optional: {}
+                  f:name: {}
+                k:{"name":"stats-auth"}:
+                  .: {}
+                  f:name: {}
+                  f:secret:
+                    .: {}
+                    f:defaultMode: {}
+                    f:secretName: {}
+      manager: ingress-operator
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    - apiVersion: apps/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:deployment.kubernetes.io/revision: {}
+        f:status:
+          f:conditions:
+            .: {}
+            k:{"type":"Available"}:
+              .: {}
+              f:lastTransitionTime: {}
+              f:lastUpdateTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"Progressing"}:
+              .: {}
+              f:lastTransitionTime: {}
+              f:lastUpdateTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+          f:observedGeneration: {}
+          f:replicas: {}
+          f:unavailableReplicas: {}
+          f:updatedReplicas: {}
+      manager: kube-controller-manager
+      operation: Update
+      subresource: status
+      time: "2023-10-12T11:24:21Z"
+    name: router-sharded
+    namespace: openshift-ingress
+    resourceVersion: "23701442"
+    uid: e3e7d8bd-57a5-4bdf-938e-809d508c9dc4
+  spec:
+    minReadySeconds: 30
+    progressDeadlineSeconds: 600
+    replicas: 2
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        ingresscontroller.operator.openshift.io/deployment-ingresscontroller: sharded
+    strategy:
+      rollingUpdate:
+        maxSurge: 0
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        annotations:
+          target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
+          unsupported.do-not-use.openshift.io/override-liveness-grace-period-seconds: "10"
+        creationTimestamp: null
+        labels:
+          ingresscontroller.operator.openshift.io/deployment-ingresscontroller: sharded
+          ingresscontroller.operator.openshift.io/hash: 865c855cbc
+      spec:
+        containers:
+        - env:
+          - name: DEFAULT_CERTIFICATE_DIR
+            value: /etc/pki/tls/private
+          - name: DEFAULT_DESTINATION_CA_PATH
+            value: /var/run/configmaps/service-ca/service-ca.crt
+          - name: RELOAD_INTERVAL
+            value: 5s
+          - name: ROUTER_ALLOW_WILDCARD_ROUTES
+            value: "false"
+          - name: ROUTER_CANONICAL_HOSTNAME
+            value: router-sharded.sispi.haproxy.apps.labcluster3.lab.upshift.rdu2.redhat.com
+          - name: ROUTER_CIPHERS
+            value: ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+          - name: ROUTER_CIPHERSUITES
+            value: TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+          - name: ROUTER_DISABLE_HTTP2
+            value: "true"
+          - name: ROUTER_DISABLE_NAMESPACE_OWNERSHIP_CHECK
+            value: "false"
+          - name: ROUTER_DOMAIN
+            value: sispi.haproxy.apps.labcluster3.lab.upshift.rdu2.redhat.com
+          - name: ROUTER_LOAD_BALANCE_ALGORITHM
+            value: random
+          - name: ROUTER_METRICS_TLS_CERT_FILE
+            value: /etc/pki/tls/metrics-certs/tls.crt
+          - name: ROUTER_METRICS_TLS_KEY_FILE
+            value: /etc/pki/tls/metrics-certs/tls.key
+          - name: ROUTER_METRICS_TYPE
+            value: haproxy
+          - name: ROUTER_SERVICE_HTTPS_PORT
+            value: "443"
+          - name: ROUTER_SERVICE_HTTP_PORT
+            value: "80"
+          - name: ROUTER_SERVICE_NAME
+            value: sharded
+          - name: ROUTER_SERVICE_NAMESPACE
+            value: openshift-ingress
+          - name: ROUTER_SET_FORWARDED_HEADERS
+            value: append
+          - name: ROUTER_TCP_BALANCE_SCHEME
+            value: source
+          - name: ROUTER_THREADS
+            value: "4"
+          - name: ROUTE_LABELS
+            value: type=sharded
+          - name: SSL_MIN_VERSION
+            value: TLSv1.2
+          - name: STATS_PASSWORD_FILE
+            value: /var/lib/haproxy/conf/metrics-auth/statsPassword
+          - name: STATS_PORT
+            value: "1936"
+          - name: STATS_USERNAME_FILE
+            value: /var/lib/haproxy/conf/metrics-auth/statsUsername
+          image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:266645aa07a4e0963ec7cdca4d87c748bf3a459d279f1c43093208ee6cd8eceb
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              host: localhost
+              path: /healthz
+              port: 1936
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          name: router
+          ports:
+          - containerPort: 80
+            hostPort: 80
+            name: http
+            protocol: TCP
+          - containerPort: 443
+            hostPort: 443
+            name: https
+            protocol: TCP
+          - containerPort: 1936
+            hostPort: 1936
+            name: metrics
+            protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              host: localhost
+              path: /healthz/ready
+              port: 1936
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+          securityContext:
+            allowPrivilegeEscalation: true
+          startupProbe:
+            failureThreshold: 120
+            httpGet:
+              host: localhost
+              path: /healthz/ready
+              port: 1936
+              scheme: HTTP
+            periodSeconds: 1
+            successThreshold: 1
+            timeoutSeconds: 1
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: FallbackToLogsOnError
+          volumeMounts:
+          - mountPath: /etc/pki/tls/private
+            name: default-certificate
+            readOnly: true
+          - mountPath: /var/run/configmaps/service-ca
+            name: service-ca-bundle
+            readOnly: true
+          - mountPath: /var/lib/haproxy/conf/metrics-auth
+            name: stats-auth
+            readOnly: true
+          - mountPath: /etc/pki/tls/metrics-certs
+            name: metrics-certs
+            readOnly: true
+        dnsPolicy: ClusterFirstWithHostNet
+        hostNetwork: true
+        nodeSelector:
+          node-role.kubernetes.io/worker: ""
+          router-sharded: "yes"
+        priorityClassName: system-cluster-critical
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        serviceAccount: router
+        serviceAccountName: router
+        terminationGracePeriodSeconds: 3600
+        topologySpreadConstraints:
+        - labelSelector:
+            matchExpressions:
+            - key: ingresscontroller.operator.openshift.io/hash
+              operator: In
+              values:
+              - 865c855cbc
+          maxSkew: 1
+          topologyKey: topology.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
+        volumes:
+        - name: default-certificate
+          secret:
+            defaultMode: 420
+            secretName: router-certs-sharded
+        - configMap:
+            defaultMode: 420
+            items:
+            - key: service-ca.crt
+              path: service-ca.crt
+            name: service-ca-bundle
+            optional: false
+          name: service-ca-bundle
+        - name: stats-auth
+          secret:
+            defaultMode: 420
+            secretName: router-stats-sharded
+        - name: metrics-certs
+          secret:
+            defaultMode: 420
+            secretName: router-metrics-certs-sharded
+  status:
+    conditions:
+    - lastTransitionTime: "2023-10-12T11:24:21Z"
+      lastUpdateTime: "2023-10-12T11:24:21Z"
+      message: Deployment does not have minimum availability.
+      reason: MinimumReplicasUnavailable
+      status: "False"
+      type: Available
+    - lastTransitionTime: "2023-10-12T11:24:21Z"
+      lastUpdateTime: "2023-10-12T11:24:21Z"
+      message: ReplicaSet "router-sharded-745ff97cc9" is progressing.
+      reason: ReplicaSetUpdated
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    replicas: 2
+    unavailableReplicas: 2
+    updatedReplicas: 2
+kind: DeploymentList
+metadata:
+  resourceVersion: "23705088"

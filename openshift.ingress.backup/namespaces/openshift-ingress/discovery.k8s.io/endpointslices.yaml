@@ -1,0 +1,130 @@
+---
+apiVersion: discovery.k8s.io/v1
+items:
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.0.91.201
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: worker-2.labcluster3.lab.upshift.rdu2.redhat.com
+    targetRef:
+      kind: Pod
+      name: router-default-84d94fd67d-n6f27
+      namespace: openshift-ingress
+      uid: f0923955-9283-480a-8695-0880daa98610
+  - addresses:
+    - 10.0.93.109
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: worker-0.labcluster3.lab.upshift.rdu2.redhat.com
+    targetRef:
+      kind: Pod
+      name: router-default-84d94fd67d-58zql
+      namespace: openshift-ingress
+      uid: 272efda5-ab5b-4eb7-ac8c-45d4f53822b1
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2023-08-31T16:28:37Z"
+    generateName: router-internal-default-
+    generation: 34
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      ingresscontroller.operator.openshift.io/owning-ingresscontroller: default
+      kubernetes.io/service-name: router-internal-default
+    managedFields:
+    - apiVersion: discovery.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:addressType: {}
+        f:endpoints: {}
+        f:metadata:
+          f:generateName: {}
+          f:labels:
+            .: {}
+            f:endpointslice.kubernetes.io/managed-by: {}
+            f:ingresscontroller.operator.openshift.io/owning-ingresscontroller: {}
+            f:kubernetes.io/service-name: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"cbbf3455-0e1d-4faf-96da-1c90cba5942e"}: {}
+        f:ports: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:22:05Z"
+    name: router-internal-default-fzkww
+    namespace: openshift-ingress
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: router-internal-default
+      uid: cbbf3455-0e1d-4faf-96da-1c90cba5942e
+    resourceVersion: "23699996"
+    uid: 589c48f6-14f2-4d81-ab23-ff822dce4d39
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+  - name: metrics
+    port: 1936
+    protocol: TCP
+  - name: https
+    port: 443
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints: null
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2023-10-12T11:24:21Z"
+    creationTimestamp: "2023-10-12T11:24:21Z"
+    generateName: router-internal-sharded-
+    generation: 1
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      ingresscontroller.operator.openshift.io/owning-ingresscontroller: sharded
+      kubernetes.io/service-name: router-internal-sharded
+    managedFields:
+    - apiVersion: discovery.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:addressType: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:endpoints.kubernetes.io/last-change-trigger-time: {}
+          f:generateName: {}
+          f:labels:
+            .: {}
+            f:endpointslice.kubernetes.io/managed-by: {}
+            f:ingresscontroller.operator.openshift.io/owning-ingresscontroller: {}
+            f:kubernetes.io/service-name: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"fabd2f3a-2282-4e50-ab07-3c4b9fe7ca7a"}: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-12T11:24:21Z"
+    name: router-internal-sharded-qqbkq
+    namespace: openshift-ingress
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: router-internal-sharded
+      uid: fabd2f3a-2282-4e50-ab07-3c4b9fe7ca7a
+    resourceVersion: "23701429"
+    uid: 67caa554-ad43-4dc4-ba5d-e7d8523c285a
+  ports: null
+kind: EndpointSliceList
+metadata:
+  resourceVersion: "23705156"

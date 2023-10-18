@@ -1,0 +1,393 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <title>Events</title>
+	<style type="text/css">
+      body * {
+       font-size: 12px!important;
+      }
+	  .text-overflow() {
+       overflow: hidden;
+	   text-overflow: ellipsis;
+	   white-space: nowrap;
+	  }
+      .truncated {
+        display: inline-block;
+        max-width: 200px;
+        .text-overflow();
+      }
+    </style>
+  </head>
+  <body>
+
+<table
+  id="events"
+  class="table table-bordered table-hover table-sm"
+  data-toggle="table"
+  data-search="true"
+  data-show-search-clear-button="true"
+  data-filter-control="true"
+  data-advanced-search="true"
+  data-id-table="advancedTable"
+  data-pagination="true"
+  data-page-size="100"
+  data-show-columns-toggle-all="true"
+  data-show-pagination-switch="true"
+  data-show-columns="true">
+  <thead>
+    <tr>
+      <th data-width="100" data-field="time" data-filter-control="input" data-sortable="true">Time</th>
+      <th data-width="200" data-field="namespace" data-filter-control="input" data-sortable="true">Namespace</th>
+      <th data-width="200" data-field="component" data-filter-control="input" data-sortable="true">Component</th>
+      <th data-width="200" data-field="relatedobject" data-filter-control="input" data-sortable="true">RelatedObject</th>
+      <th data-field="reason" data-filter-control="input">Reason</th>
+      <th data-field="message" data-filter-control="input" data-escape="true">Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:24:21 +0200 CEST" title="First Seen: 00:00:00">13:24:21</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-sharded-745ff97cc9-9nwjh</p></td>
+      <td><p class="text-danger">FailedScheduling</p></td>
+      <td data-formatter="messageFormatter">0/6 nodes are available: 3 node(s) didn&#39;t match Pod&#39;s node affinity/selector, 3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption: 0/6 nodes are available: 6 Preemption is not helpful for scheduling.</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:34 +0200 CEST" title="First Seen: 00:00:00">13:21:34</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-default-84d94fd67d-58zql</p></td>
+      <td><p class="text-muted">Scheduled</p></td>
+      <td data-formatter="messageFormatter">Successfully assigned openshift-ingress/router-default-84d94fd67d-58zql to worker-0.labcluster3.lab.upshift.rdu2.redhat.com</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:29:34 +0200 CEST" title="First Seen: 00:00:00">13:29:34</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-sharded-745ff97cc9-wcttj</p></td>
+      <td><p class="text-danger">FailedScheduling</p></td>
+      <td data-formatter="messageFormatter">0/6 nodes are available: 3 node(s) didn&#39;t match Pod&#39;s node affinity/selector, 3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption: 0/6 nodes are available: 6 Preemption is not helpful for scheduling.</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:24:21 +0200 CEST" title="First Seen: 00:00:00">13:24:21</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-sharded-745ff97cc9-wcttj</p></td>
+      <td><p class="text-danger">FailedScheduling</p></td>
+      <td data-formatter="messageFormatter">0/6 nodes are available: 3 node(s) didn&#39;t match Pod&#39;s node affinity/selector, 3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption: 0/6 nodes are available: 6 Preemption is not helpful for scheduling.</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:29:34 +0200 CEST" title="First Seen: 00:00:00">13:29:34</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-sharded-745ff97cc9-9nwjh</p></td>
+      <td><p class="text-danger">FailedScheduling</p></td>
+      <td data-formatter="messageFormatter">0/6 nodes are available: 3 node(s) didn&#39;t match Pod&#39;s node affinity/selector, 3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption: 0/6 nodes are available: 6 Preemption is not helpful for scheduling.</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 00:00:00">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-default-84d94fd67d-n6f27</p></td>
+      <td><p class="text-muted">Scheduled</p></td>
+      <td data-formatter="messageFormatter">Successfully assigned openshift-ingress/router-default-84d94fd67d-n6f27 to worker-2.labcluster3.lab.upshift.rdu2.redhat.com</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:19 +0200 CEST" title="First Seen: 00:00:00">13:21:19</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated"></p></td>
+      <td><p class="truncated">router-default-84d94fd67d-58zql</p></td>
+      <td><p class="text-danger">FailedScheduling</p></td>
+      <td data-formatter="messageFormatter">0/6 nodes are available: 3 node(s) didn&#39;t have free ports for the requested pod ports, 3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption: 0/6 nodes are available: 3 Preemption is not helpful for scheduling, 3 node(s) didn&#39;t have free ports for the requested pod ports.</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-84d94fd67d-n6f27</p></td>
+      <td><p class="text-muted">Pulled</p></td>
+      <td data-formatter="messageFormatter">Container image &#34;quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:266645aa07a4e0963ec7cdca4d87c748bf3a459d279f1c43093208ee6cd8eceb&#34; already present on machine</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-84d94fd67d-n6f27</p></td>
+      <td><p class="text-muted">Started</p></td>
+      <td data-formatter="messageFormatter">Started container router</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">replicaset-controller</p></td>
+      <td><p class="truncated">router-default-84d94fd67d</p></td>
+      <td><p class="text-muted">SuccessfulCreate</p></td>
+      <td data-formatter="messageFormatter">Created pod: router-default-84d94fd67d-n6f27</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-84d94fd67d-n6f27</p></td>
+      <td><p class="text-muted">Created</p></td>
+      <td data-formatter="messageFormatter">Created container router</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-2gbqr</p></td>
+      <td><p class="text-danger">Killing</p></td>
+      <td data-formatter="messageFormatter">Stopping container router</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">replicaset-controller</p></td>
+      <td><p class="truncated">router-default-c469b7b4b</p></td>
+      <td><p class="text-muted">SuccessfulDelete</p></td>
+      <td data-formatter="messageFormatter">Deleted pod: router-default-c469b7b4b-2gbqr</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">deployment-controller</p></td>
+      <td><p class="truncated">router-default</p></td>
+      <td><p class="text-muted">ScalingReplicaSet</p></td>
+      <td data-formatter="messageFormatter">Scaled up replica set router-default-84d94fd67d to 1 from 0</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:20:47 +0200 CEST" title="First Seen: 13:20:47">13:20:47</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">deployment-controller</p></td>
+      <td><p class="truncated">router-default</p></td>
+      <td><p class="text-muted">ScalingReplicaSet</p></td>
+      <td data-formatter="messageFormatter">Scaled down replica set router-default-c469b7b4b to 1 from 2</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:19 +0200 CEST" title="First Seen: 13:21:19">13:21:19</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">deployment-controller</p></td>
+      <td><p class="truncated">router-default</p></td>
+      <td><p class="text-muted">ScalingReplicaSet</p></td>
+      <td data-formatter="messageFormatter">Scaled up replica set router-default-84d94fd67d to 2 from 1</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:19 +0200 CEST" title="First Seen: 13:21:19">13:21:19</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">replicaset-controller</p></td>
+      <td><p class="truncated">router-default-c469b7b4b</p></td>
+      <td><p class="text-muted">SuccessfulDelete</p></td>
+      <td data-formatter="messageFormatter">Deleted pod: router-default-c469b7b4b-m48mt</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:19 +0200 CEST" title="First Seen: 13:21:19">13:21:19</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">replicaset-controller</p></td>
+      <td><p class="truncated">router-default-84d94fd67d</p></td>
+      <td><p class="text-muted">SuccessfulCreate</p></td>
+      <td data-formatter="messageFormatter">Created pod: router-default-84d94fd67d-58zql</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:19 +0200 CEST" title="First Seen: 13:21:19">13:21:19</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">deployment-controller</p></td>
+      <td><p class="truncated">router-default</p></td>
+      <td><p class="text-muted">ScalingReplicaSet</p></td>
+      <td data-formatter="messageFormatter">Scaled down replica set router-default-c469b7b4b to 0 from 1</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:19 +0200 CEST" title="First Seen: 13:21:19">13:21:19</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-m48mt</p></td>
+      <td><p class="text-danger">Killing</p></td>
+      <td data-formatter="messageFormatter">Stopping container router</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:23 +0200 CEST" title="First Seen: 13:20:53">13:21:23</time> <small>(x4)</small></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-2gbqr</p></td>
+      <td><p class="text-danger">ProbeError</p></td>
+      <td data-formatter="messageFormatter">Readiness probe error: HTTP probe failed with statuscode: 500
+body: [&#43;]backend-http ok
+[&#43;]has-synced ok
+[-]process-running failed: reason withheld
+healthz check failed
+
+</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:33 +0200 CEST" title="First Seen: 13:21:33">13:21:33</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-2gbqr</p></td>
+      <td><p class="text-danger">ProbeError</p></td>
+      <td data-formatter="messageFormatter">Readiness probe error: HTTP probe failed with statuscode: 500
+body: [-]backend-http failed: reason withheld
+[&#43;]has-synced ok
+[-]process-running failed: reason withheld
+healthz check failed
+
+</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:33 +0200 CEST" title="First Seen: 13:20:53">13:21:33</time> <small>(x5)</small></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-2gbqr</p></td>
+      <td><p class="text-warning">Unhealthy</p></td>
+      <td data-formatter="messageFormatter">Readiness probe failed: HTTP probe failed with statuscode: 500</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:34 +0200 CEST" title="First Seen: 13:21:34">13:21:34</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-84d94fd67d-58zql</p></td>
+      <td><p class="text-muted">Started</p></td>
+      <td data-formatter="messageFormatter">Started container router</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:34 +0200 CEST" title="First Seen: 13:21:34">13:21:34</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-84d94fd67d-58zql</p></td>
+      <td><p class="text-muted">Created</p></td>
+      <td data-formatter="messageFormatter">Created container router</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:34 +0200 CEST" title="First Seen: 13:21:34">13:21:34</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-84d94fd67d-58zql</p></td>
+      <td><p class="text-muted">Pulled</p></td>
+      <td data-formatter="messageFormatter">Container image &#34;quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:266645aa07a4e0963ec7cdca4d87c748bf3a459d279f1c43093208ee6cd8eceb&#34; already present on machine</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:21:54 +0200 CEST" title="First Seen: 13:21:24">13:21:54</time> <small>(x4)</small></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-m48mt</p></td>
+      <td><p class="text-danger">ProbeError</p></td>
+      <td data-formatter="messageFormatter">Readiness probe error: HTTP probe failed with statuscode: 500
+body: [&#43;]backend-http ok
+[&#43;]has-synced ok
+[-]process-running failed: reason withheld
+healthz check failed
+
+</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:22:04 +0200 CEST" title="First Seen: 13:22:04">13:22:04</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-m48mt</p></td>
+      <td><p class="text-danger">ProbeError</p></td>
+      <td data-formatter="messageFormatter">Readiness probe error: HTTP probe failed with statuscode: 500
+body: [-]backend-http failed: reason withheld
+[&#43;]has-synced ok
+[-]process-running failed: reason withheld
+healthz check failed
+
+</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:22:04 +0200 CEST" title="First Seen: 13:21:24">13:22:04</time> <small>(x5)</small></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">kubelet</p></td>
+      <td><p class="truncated">router-default-c469b7b4b-m48mt</p></td>
+      <td><p class="text-warning">Unhealthy</p></td>
+      <td data-formatter="messageFormatter">Readiness probe failed: HTTP probe failed with statuscode: 500</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:24:21 +0200 CEST" title="First Seen: 13:24:21">13:24:21</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">replicaset-controller</p></td>
+      <td><p class="truncated">router-sharded-745ff97cc9</p></td>
+      <td><p class="text-muted">SuccessfulCreate</p></td>
+      <td data-formatter="messageFormatter">Created pod: router-sharded-745ff97cc9-wcttj</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:24:21 +0200 CEST" title="First Seen: 13:24:21">13:24:21</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">replicaset-controller</p></td>
+      <td><p class="truncated">router-sharded-745ff97cc9</p></td>
+      <td><p class="text-muted">SuccessfulCreate</p></td>
+      <td data-formatter="messageFormatter">Created pod: router-sharded-745ff97cc9-9nwjh</td>
+    </tr>
+    
+    <tr>
+      <td><time datetime="2023-10-12 13:24:21 +0200 CEST" title="First Seen: 13:24:21">13:24:21</time></td>
+      <td><p class="truncated">openshift-ingress</p></td>
+      <td><p class="truncated">deployment-controller</p></td>
+      <td><p class="truncated">router-sharded</p></td>
+      <td><p class="text-muted">ScalingReplicaSet</p></td>
+      <td data-formatter="messageFormatter">Scaled up replica set router-sharded-745ff97cc9 to 2</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/extensions/toolbar/bootstrap-table-toolbar.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js" crossorigin="anonymous"></script>
+
+	<script>
+	function messageFormatter(value, row) {
+    	return '<code>'+value+'</code>'
+  	}
+    $(function() {
+      $('#events').bootstrapTable()
+    })
+	</script>
+  </body>
+</html>

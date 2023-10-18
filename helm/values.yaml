@@ -1,0 +1,34 @@
+statsUsername: stats
+statsPassword: statsPwd
+tlsCert: "tls.crt"
+tlsKey: "tls.key"
+#ingressFQDN: "secured-apps.cluster-pzhsw.gcp.redhatworkshops.io"
+ingressFQDN: "sispi.haproxy.apps.labcluster3.lab.upshift.rdu2.redhat.com"
+#image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:606c91ed7dc3e3f831dd2aaa45e2e43679f0598b6f7bc9fd67c228ec33d15d94
+#image: docker.io/haproxy:2.6
+image: registry.access.redhat.com/haproxy:2.6
+nodeSelector:
+  node-role.kubernetes.io/worker: ""
+#  router-sharded: "yes"
+routeLabels: type=sharded
+service:
+#  useInternalLB: aws
+  annotations:
+    app: router
+# with service.type = NodePort, allocateLoadBalancerNodePorts should be set to false
+# httpNodePort  and httpsNodePort are optional to set the node port to be allocated
+  type: LoadBalancer
+# allocateLoadBalancerNodePorts should be set only with service.type = LoadBalancer
+  allocateLoadBalancerNodePorts: true
+  httpNodePort: 30013
+  httpsNodePort: 30014
+replicas: 3
+# If you  want to expose the router with host Networking set  useHostNetwork: to true
+useHostNetwork: false
+# You can then set the ports to be used with httpRouterPort, httpsRouterPort and  metricsRouterPort
+httpRouterPort: 80
+httpsRouterPort: 443
+metricsRouterPort: 1936
+customHAProxyTemplate:
+  useCustomTemplate: false
+  file: haproxy-config.template

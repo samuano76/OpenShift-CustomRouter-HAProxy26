@@ -1,0 +1,54 @@
+{{- if eq .Values.useHostNetwork false }}
+apiVersion: v1
+kind: Service
+metadata:
+{{- if or .Values.service.useInternalLB .Values.service.annotations }}
+  annotations:
+{{- if eq .Values.service.useInternalLB "azure" }}
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+{{- end }}
+{{- if eq .Values.service.useInternalLB "aws" }}
+    service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+{{- end }}
+{{- if eq .Values.service.useInternalLB "gcp" }}
+    networking.gke.io/load-balancer-type: "Internal" 
+{{- end }}
+  {{- with .Values.service.annotations }}
+    {{- toYaml . | nindent 4 }}  
+  {{- end }}
+{{- end }}
+  labels:
+    app: router
+    ingresscontroller.operator.openshift.io/owning-ingresscontroller: {{ include "router-shard.fullname" . }}
+    router: router-{{ include "router-shard.fullname" . }}
+  name: router-{{ include "router-shard.fullname" . }}
+  namespace: openshift-ingress
+spec:
+{{- if eq .Values.service.type "LoadBalancer" }}
+  allocateLoadBalancerNodePorts: {{ .Values.service.allocateLoadBalancerNodePorts }}
+{{- end  }}
+  externalTrafficPolicy: Local
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: http
+    {{- if not .Values.service.allocateLoadBalancerNodePorts }}
+    {{- with .Values.service.httpNodePort }}
+    nodePort: {{ . }}
+    {{- end }}
+    {{- end }}
+  - name: https
+    port: 443
+    protocol: TCP
+    targetPort: https
+    {{- if not .Values.service.allocateLoadBalancerNodePorts }}
+    {{- with .Values.service.httpsNodePort }}
+    nodePort: {{ . }}
+    {{- end }}
+    {{- end }}
+  selector:
+    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: {{ include "router-shard.fullname" . }}
+  sessionAffinity: None
+  type: {{ .Values.service.type }}
+{{- end }}

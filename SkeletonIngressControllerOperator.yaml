@@ -1,0 +1,17 @@
+apiVersion: operator.openshift.io/v1
+kind: IngressController
+metadata:
+  name: sharded-operator
+  namespace: openshift-ingress-operator
+spec:
+  domain: apps.cloudfront-test.sandbox2436.opentlc.com
+  nodePlacement:
+    nodeSelector:
+      matchLabels:
+        node-role.kubernetes.io/worker: ""
+  routeSelector:
+    matchLabels:
+      type: sharded
+  tuningOptions:
+    threadCount: 5
+status: {}

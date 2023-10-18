@@ -1,0 +1,9 @@
+2023-10-12T11:20:48.039558478Z I1012 11:20:48.039419       1 template.go:437] router "msg"="starting router" "version"="majorFromGit: \nminorFromGit: \ncommitFromGit: 3a1f43ca2b7e1549c6d108b6311cda59fcca28d6\nversionFromGit: 4.0.0-408-g3a1f43ca\ngitTreeState: clean\nbuildDate: 2023-07-18T22:22:37Z\n"
+2023-10-12T11:20:48.040727553Z I1012 11:20:48.040711       1 metrics.go:156] metrics "msg"="router health and metrics port listening on HTTP and HTTPS" "address"="0.0.0.0:1936"
+2023-10-12T11:20:48.045633614Z I1012 11:20:48.045608       1 router.go:200] template "msg"="creating a new template router" "writeDir"="/var/lib/haproxy"
+2023-10-12T11:20:48.045653301Z I1012 11:20:48.045646       1 router.go:282] template "msg"="router will coalesce reloads within an interval of each other" "interval"="5s"
+2023-10-12T11:20:48.046649611Z I1012 11:20:48.046521       1 router.go:352] template "msg"="watching for changes" "path"="/etc/pki/tls/private"
+2023-10-12T11:20:48.046649611Z I1012 11:20:48.046559       1 router.go:269] router "msg"="router is including routes in all namespaces" 
+2023-10-12T11:20:48.153982228Z E1012 11:20:48.153859       1 haproxy.go:418] can't scrape HAProxy: dial unix /var/lib/haproxy/run/haproxy.sock: connect: no such file or directory
+2023-10-12T11:20:48.199883204Z I1012 11:20:48.199833       1 router.go:635] template "msg"="router reloaded" "output"=" - Checking http://localhost:80 ...\n - Health check ok : 0 retry attempt(s).\n"
+2023-10-12T11:20:53.181110686Z I1012 11:20:53.181066       1 router.go:635] template "msg"="router reloaded" "output"=" - Checking http://localhost:80 ...\n - Health check ok : 0 retry attempt(s).\n"

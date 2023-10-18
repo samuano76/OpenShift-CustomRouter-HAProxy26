@@ -1,0 +1,264 @@
+---
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDMjCCAhqgAwIBAgIIUV6CzJLoqGUwDQYJKoZIhvcNAQELBQAwNzESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSEwHwYDVQQDExhrdWJlLWFwaXNlcnZlci1sYi1zaWduZXIw
+      HhcNMjMwODMxMTYxMDQxWhcNMzMwODI4MTYxMDQxWjA3MRIwEAYDVQQLEwlvcGVu
+      c2hpZnQxITAfBgNVBAMTGGt1YmUtYXBpc2VydmVyLWxiLXNpZ25lcjCCASIwDQYJ
+      KoZIhvcNAQEBBQADggEPADCCAQoCggEBALilKOjiiaRWxMFt8pH7LNKTwR3JSprz
+      k0fZKrnyDYvxPz4WfrVI4BujAE1O2Lgsw+t307o1/zQEakHif3uqVMlRgvF69QaQ
+      TgKXjuOPb94xKvNYxOvsCa0B+2CWEY/Eo8WR0Wi/SZkDUeGA8yehu/gdCt6/2TNC
+      T9dqfVZmjxJWOPF4xpkdA332T03wRmZ5Nv10xd+pCIucUVkrEvtJps9K6u1VVy/X
+      C6WaJODlSif6lA6gVksw3sXu4l1sstkTRx2a+Ejjo3tybOIJeEg4zqKf9NldRX03
+      qGyMGa1uQ+7j6NZxNMIEZ0lx6/TCpOPBJJFvGpDf/Nw9Iv3fV6MkYFsCAwEAAaNC
+      MEAwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFOUO
+      0bO6uUPZvxOOOxlSNlhwfS27MA0GCSqGSIb3DQEBCwUAA4IBAQCQ6eb82S1dqzo0
+      +N5D8RIIKbxclkZ09gtStGxGU3sDhjhfC20hg3dG7ojR04jP6e4//dNgupnRXVJh
+      GHY4qJMJdjxblm3qNrMBUUQrlkMTVRKkQIU+SnfMXXZCpmUVfVlHmsWxON3BbRpu
+      vuF9K5V6atsKp+ivU3XYMyY55TX2j8j5kWXMg2iLBI1y6eSrOL8Njo1EgBzjeCdf
+      0kaou6jxmeizR1TF3qMRCHDPUqIysnIY33y0FTVKZnAbGdiQrJEBwwzs5Lu2LlYo
+      gXm/88v6ay0FG9aO9jViwG9Nx6uiXU7aI2+X0ecxyg0AaATyY1XcNCei81YPEUZA
+      3vEUPHbe
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDQDCCAiigAwIBAgIIdJA6A2r62tkwDQYJKoZIhvcNAQELBQAwPjESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+      c2lnbmVyMB4XDTIzMDgzMTE2MTA0MFoXDTMzMDgyODE2MTA0MFowPjESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+      c2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAydOHu2uHZiJc
+      +59Ub8c0ER7m2KNqgskuYh8WTbcy+v0qf7RyuvEuuEXLHSVHQ1iFKNIjshAkExRL
+      jk2CG+9yCpMn3cUCye0lMAxULH+WKCBpSzrYYOjwVQkK2ny5SSAubsyFMvHACgnz
+      Cc1/oeM6WKC2e4qu96rerD4zdXGaOUDRfUXAPv1Kvfb8zLdLc5OsjWQdnGmRq+2T
+      xj0Z+WRtm8Tfie8NrE7rZ5YxKoKhMhhYlT0SYAftRrBqHrHpdqExlrTHa4VTemts
+      nKjZGNpZQJ5OqDMUl00vtNxnsMm06/isJRu1NMyW3j5jASGQ7GvIH4wg3QYYy8ZJ
+      NWrpiqicMwIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/BAUwAwEB
+      /zAdBgNVHQ4EFgQUsWVaor6wjbjxI1ui9FzXiEHlvR8wDQYJKoZIhvcNAQELBQAD
+      ggEBAB3CUnO7ApEfhMZSivhb8CszIytJeiYohSb2g93GhITwTgp87H7ZtiXKM2Dg
+      TGhnFNZrOUjWj2TPPjrid1+ghXDxBuK8n+LDN4DVmbYqNQ00bQLZ/JzU3is1cR2x
+      5uvAtF+p+mG9addFftDnzVbwGxCvZK7jaY3ogTAf8bLvItWUBRdGnsjkl7AhJJeB
+      slkMld7f7WpMPDg8d19mRdAmelICXmmrQ8lzoB7eLN7lITYQgSpB03K7S/rVMK93
+      Bg/uP7BHWdiH819ICv3NiMHE4BA4t/Hzlxi71OBuZYo8E9hNQpbtH8e2eny+ZrHv
+      7WGzFVlo7GeETaP4b0XkfUIY2+I=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDTDCCAjSgAwIBAgIIN2Uz/k/nImUwDQYJKoZIhvcNAQELBQAwRDESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MS4wLAYDVQQDEyVrdWJlLWFwaXNlcnZlci1zZXJ2aWNlLW5l
+      dHdvcmstc2lnbmVyMB4XDTIzMDgzMTE2MTA0MFoXDTMzMDgyODE2MTA0MFowRDES
+      MBAGA1UECxMJb3BlbnNoaWZ0MS4wLAYDVQQDEyVrdWJlLWFwaXNlcnZlci1zZXJ2
+      aWNlLW5ldHdvcmstc2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+      AQEAuZYh7CNHMZ4G1qhLBoj6YNVuGs3OUaOCxp2nkipwrz/Aa1SVf/MvV5BoiHTm
+      3SRlLWtyUIDkJtNZaQPgRhNnabkLHQDV1NlAO2CI7XyNa0N60M/IwSX8GMKQcLjP
+      Q28WH82IXksOqEs3QaZBRkya2vbxug9Xpd0gDjATxqTGzrkUDT9OwUd8OUehadzU
+      IFTKbLw4yTPn88gUjH5ohofsspqCCDMDVTOsu8HsokNsqO0rNKeQf19wHK6qypE8
+      0G7u8hbBSYlJYdEYNvwGFd69hVuFzwOVhHprpsbPC8j5ncaKzLbSPqjPUlk8EOpW
+      7IOgnYPbqg1ZgSD8a6ZGPHGSYQIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYD
+      VR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUmBuTIdp5MID+927+75wC7Kb90dIwDQYJ
+      KoZIhvcNAQELBQADggEBABmPb0GOr9eau0pKZJZAI1BWeDhR4QCAFAQTUhNnts93
+      7eD1WXnpWK26ZKUSQ70/wuZ9zAc87pSblJ1D5r8Fz8sOeuZo6G8tPN63/bePA0Po
+      f0iP+/asx6RFK8bpEKuZqBaz0bCI3ssoSIzQ+9Ql8UekmsAS90fXuO0o39Hw1Zlr
+      FivwtOiaGIwQ2p5szZIfTWI8gPIbvE7QDaRXZXwN+HAbVQnIDb5UYefi+Ar9LxlB
+      Nr4eSLzWsvP+JFffUUSEblAoOB2tv5gSH3pp70XlwjPOrvawNMpZdvh1lby+PBY8
+      9QUZN4fHaNPFOwynnkn6GXlfNZbcip+C6nRcOw+YseM=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDlzCCAn+gAwIBAgIIQIIGfl5DQ8owDQYJKoZIhvcNAQELBQAwWTFXMFUGA1UE
+      AwxOb3BlbnNoaWZ0LWt1YmUtYXBpc2VydmVyLW9wZXJhdG9yX2xvY2FsaG9zdC1y
+      ZWNvdmVyeS1zZXJ2aW5nLXNpZ25lckAxNjkzNDk5MjM1MB4XDTIzMDgzMTE2Mjcx
+      NVoXDTMzMDgyODE2MjcxNlowWTFXMFUGA1UEAwxOb3BlbnNoaWZ0LWt1YmUtYXBp
+      c2VydmVyLW9wZXJhdG9yX2xvY2FsaG9zdC1yZWNvdmVyeS1zZXJ2aW5nLXNpZ25l
+      ckAxNjkzNDk5MjM1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2kfN
+      9zX1x70lfTKLXoNC/z1e9uDx5inYWr0M5l4dp18KqCNTr6UWFphDItvwPxkUmbgM
+      tSG6705mg1g8Df51s3X33eXxglONhSLFjS8TU4x1fpxFrmL2n7N844FiZ3F0J1yN
+      qfJKldsngh0FkkN9QSNFPqDVLnN5e7TVvl7Mx8usmqeibWG3oinQy3zPblqrLRmc
+      HgELWAqfHWOZdlyC55+aRTbLZbuvKgLB0/cEFVd0Hg+tU2H2VC3ocgXZ0ghoszBD
+      /p+lZnyRo2cA5KWMaVzAidwdowaVNFSOEIhgdmlgHT5DzgJweAQ/8FV8jXH5ajTL
+      vQKg1joLQVAbB20qOQIDAQABo2MwYTAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/
+      BAUwAwEB/zAdBgNVHQ4EFgQU6jfcsg17O3d1ONi/driEiBAkOkkwHwYDVR0jBBgw
+      FoAU6jfcsg17O3d1ONi/driEiBAkOkkwDQYJKoZIhvcNAQELBQADggEBAEwN9sA2
+      Zr4ntGZLKXGc/1Fdtr51RDvjeJ4c7rS0Y7B1+STuHsKQzpljzKcy6VNzP0XgfPTu
+      68EVAG8HlGXGgzmCkZNAiPFt33ovnKnRIosnWUl/JPWRq3eaN5PSkLDBVRfJSrQw
+      WHPZ6jXNtJ85AivxnBrw9QvDC7y69Jx7hlf0WD1rNPUmP3YYId62xzR02lO8pqf+
+      uGCLZaIqapfHIhc+Bw3XqulspyONgItGKtV69veUzZsVg55cW17Ehxf9b93PX1/5
+      pwJuCKXNXspkkkR6eYDEdPmK+3JgO8zI35AR1Qp9aYrRHgMc6n5R3+ggYUgQyCvv
+      ZFDP/nr8IiVu1iI=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDkzCCAnugAwIBAgIIFBwG9ww0WrAwDQYJKoZIhvcNAQELBQAwJjEkMCIGA1UE
+      AwwbaW5ncmVzcy1vcGVyYXRvckAxNjkzNDk5MzE2MB4XDTIzMDgzMTE2MjgzNloX
+      DTI1MDgzMDE2MjgzN1owOTE3MDUGA1UEAwwuKi5hcHBzLmxhYmNsdXN0ZXIzLmxh
+      Yi51cHNoaWZ0LnJkdTIucmVkaGF0LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+      ADCCAQoCggEBAMORQAceOnsgFh8vSYKbqVlIXIdcc3Qi2PpeWwCOibP04K6+2rlm
+      eXT9Nvf7QuPuphqhW6noDZ+aWyRPTw3T6+kHRuaS42pDwqd6iq1CQCDxlip4QJfe
+      KpX1A77U26cJugOMQCPVQ+mJnutCZnzZ8LUwaJUZt5tBNjdayxDZEKmIHWgFwoO/
+      pQSga6vJwNEuNPpJWOIYWuoCNeVa4IhnbeNYbtRMdwSeNVDqAxYlFSGZccQlvYwe
+      OKSZArWL2ocvYkCJ8bbIojskDQsDP5Gor3dLaHRLUuefREPNrcVwzIoK9m7Ss82V
+      /KdyW2CYHGarTPAI8MoFh7MNqnvnSSL1lekCAwEAAaOBsTCBrjAOBgNVHQ8BAf8E
+      BAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4E
+      FgQUP9Sll1RTPM+wY5c00FJ3/7zjLBQwHwYDVR0jBBgwFoAUhXUKoRJdpdLzX5qa
+      d7cBiYc0RqMwOQYDVR0RBDIwMIIuKi5hcHBzLmxhYmNsdXN0ZXIzLmxhYi51cHNo
+      aWZ0LnJkdTIucmVkaGF0LmNvbTANBgkqhkiG9w0BAQsFAAOCAQEAUkLeOU3xUUZb
+      mS7zaxyySO51Z8qzM3BfhlAIUfReQxNnRCrOvhXCXXuLnyAYVHEQ2hDtEt9hZ395
+      rH0iJFSq5SNNFy7i5+iih3PGjPuqsw8mBOfPn1QjakK4hc8TbNicdLEoyAC02gEN
+      LXk+nEKP1KvSV+WAorZefTm7wbBO6fDyu/gB/RxseXO9X+dvzk+3M+d8LkpQSYPV
+      I3r+3vNVP01HsMnVRUO39VxDYyDq8WKdNsbkXjYdtjYG7On1bvDhg2jZz0tYUBUP
+      5dmiBC0JlfIUePZLFBIuZrCFA06pUv6zUqmWTrDL0rx8g6i7HkwSrEEMYeU9hKP1
+      94PZ8p7sIA==
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDDDCCAfSgAwIBAgIBATANBgkqhkiG9w0BAQsFADAmMSQwIgYDVQQDDBtpbmdy
+      ZXNzLW9wZXJhdG9yQDE2OTM0OTkzMTYwHhcNMjMwODMxMTYyODM1WhcNMjUwODMw
+      MTYyODM2WjAmMSQwIgYDVQQDDBtpbmdyZXNzLW9wZXJhdG9yQDE2OTM0OTkzMTYw
+      ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDM9vWYNlTANcmxdjeTjGAq
+      nbEb0Dtgzm5lYkZfNMtmpTItAwcsHSWbxn5GSBX/WLV9MY9az/g72/goIObPgv9y
+      NjwLy/oHyRtYVo7CdPB2pem4Fk3CGNMtGtvwsZBnDLWfJe93sxt/plPIVxtrTdSh
+      XckYXCoB/hZTIJnFFnDBADPJ6dSIgalBNJf6jMApkzNWrStjLDjs9QfkHChmzXwo
+      orUMMdThtIPs+I79/5Tb2B+0+wDeDdz2eAGyB0NFdgejx2ItIt9RtsfrMQYPu9Ko
+      tewKIxLUWT2NnpXpuwQlqT3ZHUWAo6wvWm1ivShtUSlZNBBqPQibesBviJgvF2Ob
+      AgMBAAGjRTBDMA4GA1UdDwEB/wQEAwICpDASBgNVHRMBAf8ECDAGAQH/AgEAMB0G
+      A1UdDgQWBBSFdQqhEl2l0vNfmpp3twGJhzRGozANBgkqhkiG9w0BAQsFAAOCAQEA
+      UtJLFm4V517EgxopXHHAZnjNjOaNphdGZTjKV5ccUeJvJe5tjVBoh5bEBBMGZSR3
+      N+2S49vh2OL5AO4mwjoM774LqftYGQaJElN7e5qcfdw/qs/u7U1AOUIAr9EagLCd
+      EADx+0y6GcuVxQwj7Cd9lLYNNViXrr0NXpHCDQjp0OarZpoKVfh4Z9Jj+e48TeAA
+      XB5lGGYjU3JwPyUjrk18kZkv6O89Zr6B01t5mxjEy8xh4iOUP6vBzAxqIWZt76Fd
+      8PWwv9oHCdLLQMs+Zp6pYqflsFXanli17nBeD5Lgq0t2zy1Fm5/1+MU1yDMP6i9h
+      mj6quBfuZmf/BJWGasIBOQ==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      kubernetes.io/description: Contains a CA bundle that can be used to verify the
+        kube-apiserver when using internal endpoints such as the internal service
+        IP or kubernetes.default.svc. No other usage is guaranteed across distributions
+        of Kubernetes clusters.
+    creationTimestamp: "2023-08-31T16:28:36Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:ca.crt: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubernetes.io/description: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-08-31T16:32:54Z"
+    name: kube-root-ca.crt
+    namespace: openshift-ingress
+    resourceVersion: "16803"
+    uid: bde8f3ce-6e7f-4aad-960c-42c28f636b7a
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIDLXwHZxdwHgwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTY5MzQ5OTIzODAe
+      Fw0yMzA4MzExNjI3MTdaFw0yNTEwMjkxNjI3MThaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE2OTM0OTkyMzgwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCr5iB0VsfJMaZLoO0M2sCdhqFn7JRGmdlI
+      s4roWLTEggqd6VeMybsfb9K5CwqvzWYBT3Dt0XBoq6kbHpx6ir+japRKj/dh87Zx
+      m/LI9CczQwJF84Nl2F8wKRFNHOCGIRY1E+zyeZzZuzHuhVdch6QsvE73ggw8WDNy
+      w0sCtv/3YUvM7RH5kI0AA9/nDdU+ICh5kk/5mOBkpVwvu6xjWMGg4jFIpSveVPQp
+      xy7GUQ28Vf4ffcfnIeNJqnK3OLvCkP7M0ZqYdJgRauB3EdkwXaDQki9OJFHdY9gL
+      elW44w6e41IAyLdp6pqWR5vA0QFer2/oogX2TW+Zkgekqexk2/lzAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQRz+25
+      Kq3A4AYo6GG87IHoBWHIIDAfBgNVHSMEGDAWgBQRz+25Kq3A4AYo6GG87IHoBWHI
+      IDANBgkqhkiG9w0BAQsFAAOCAQEAk9GDOkfnwk1D//TDh+a+lXkgEynci5MU/Eyw
+      WfffpZW7Tyj2KUEQLkDnfO8QPgVSQlzREXUzwXoxKBQ0cJgOjgILp71ke9LENwdx
+      IAHdgwHdFp9VlgKYFLn+cd725VxkUIqnT/GlTuHXXer4AoL19I65ABtRYtPOp16r
+      xmrRF4dnKMs2gNO5wtQAqH8Ca6k5okX7jhtTJVa4BTFpvKLhxBo0uycXNhT3+63o
+      dRBr+l4E314gmEw+s2yy20+lEkr32SH6HBbOcAtO5wzH5PuCpNR/XqCs7bwH3rVv
+      A809dVNsUB5hE2kxprCs/AdbdMFaoaIn8b7k+BpwsPJTwS59qw==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      service.beta.openshift.io/inject-cabundle: "true"
+    creationTimestamp: "2023-08-31T16:28:36Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:service.beta.openshift.io/inject-cabundle: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          f:service-ca.crt: {}
+      manager: service-ca-operator
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    name: openshift-service-ca.crt
+    namespace: openshift-ingress
+    resourceVersion: "9398"
+    uid: 778ec7aa-e0b1-4fea-9187-39e8ade7dc30
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIDLXwHZxdwHgwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTY5MzQ5OTIzODAe
+      Fw0yMzA4MzExNjI3MTdaFw0yNTEwMjkxNjI3MThaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE2OTM0OTkyMzgwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCr5iB0VsfJMaZLoO0M2sCdhqFn7JRGmdlI
+      s4roWLTEggqd6VeMybsfb9K5CwqvzWYBT3Dt0XBoq6kbHpx6ir+japRKj/dh87Zx
+      m/LI9CczQwJF84Nl2F8wKRFNHOCGIRY1E+zyeZzZuzHuhVdch6QsvE73ggw8WDNy
+      w0sCtv/3YUvM7RH5kI0AA9/nDdU+ICh5kk/5mOBkpVwvu6xjWMGg4jFIpSveVPQp
+      xy7GUQ28Vf4ffcfnIeNJqnK3OLvCkP7M0ZqYdJgRauB3EdkwXaDQki9OJFHdY9gL
+      elW44w6e41IAyLdp6pqWR5vA0QFer2/oogX2TW+Zkgekqexk2/lzAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQRz+25
+      Kq3A4AYo6GG87IHoBWHIIDAfBgNVHSMEGDAWgBQRz+25Kq3A4AYo6GG87IHoBWHI
+      IDANBgkqhkiG9w0BAQsFAAOCAQEAk9GDOkfnwk1D//TDh+a+lXkgEynci5MU/Eyw
+      WfffpZW7Tyj2KUEQLkDnfO8QPgVSQlzREXUzwXoxKBQ0cJgOjgILp71ke9LENwdx
+      IAHdgwHdFp9VlgKYFLn+cd725VxkUIqnT/GlTuHXXer4AoL19I65ABtRYtPOp16r
+      xmrRF4dnKMs2gNO5wtQAqH8Ca6k5okX7jhtTJVa4BTFpvKLhxBo0uycXNhT3+63o
+      dRBr+l4E314gmEw+s2yy20+lEkr32SH6HBbOcAtO5wzH5PuCpNR/XqCs7bwH3rVv
+      A809dVNsUB5hE2kxprCs/AdbdMFaoaIn8b7k+BpwsPJTwS59qw==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      description: ConfigMap providing service CA bundle.
+      service.beta.openshift.io/inject-cabundle: "true"
+    creationTimestamp: "2023-08-31T16:28:36Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:description: {}
+            f:service.beta.openshift.io/inject-cabundle: {}
+      manager: ingress-operator
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:service-ca.crt: {}
+      manager: service-ca-operator
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    name: service-ca-bundle
+    namespace: openshift-ingress
+    resourceVersion: "9403"
+    uid: 1c4fcfde-d641-4c7a-b547-b1f755a32439
+kind: ConfigMapList
+metadata:
+  resourceVersion: "23705141"
