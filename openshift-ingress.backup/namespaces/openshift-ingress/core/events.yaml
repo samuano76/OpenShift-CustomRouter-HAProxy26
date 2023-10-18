@@ -1,0 +1,216 @@
+---
+apiVersion: v1
+items:
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-18T09:09:43.068654Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-sharded-7c66cd9fdf-b8s76
+    namespace: openshift-ingress
+    resourceVersion: "30129439"
+    uid: b1718da9-db4d-4ba8-b961-70eedf42e27a
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption:
+    0/6 nodes are available: 6 Preemption is not helpful for scheduling.'
+  metadata:
+    creationTimestamp: "2023-10-18T09:09:43Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-18T09:09:43Z"
+    name: router-sharded-7c66cd9fdf-b8s76.178f288fe75745f9
+    namespace: openshift-ingress
+    resourceVersion: "30129444"
+    uid: da4b2914-9dc5-4621-a669-ff510e11f875
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-10-18T09:09:43.036555Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: router-sharded-7c66cd9fdf-s7p65
+    namespace: openshift-ingress
+    resourceVersion: "30129436"
+    uid: f5cc2efa-9323-492c-8063-a7bc5ba1ce76
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) had untolerated taint {node-role.kubernetes.io/master: }. preemption:
+    0/6 nodes are available: 6 Preemption is not helpful for scheduling.'
+  metadata:
+    creationTimestamp: "2023-10-18T09:09:43Z"
+    managedFields:
+    - apiVersion: events.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:action: {}
+        f:eventTime: {}
+        f:note: {}
+        f:reason: {}
+        f:regarding: {}
+        f:reportingController: {}
+        f:reportingInstance: {}
+        f:type: {}
+      manager: kube-scheduler
+      operation: Update
+      time: "2023-10-18T09:09:43Z"
+    name: router-sharded-7c66cd9fdf-s7p65.178f288fe56d814d
+    namespace: openshift-ingress
+    resourceVersion: "30129440"
+    uid: 6ad6f811-3d44-4a36-bb63-a0e897d926ac
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-master-2.labcluster3.lab.upshift.rdu2.redhat.com
+  source: {}
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-18T09:09:43Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-sharded-7c66cd9fdf
+    namespace: openshift-ingress
+    resourceVersion: "30129429"
+    uid: 22d5a24a-ef72-4029-8e03-5ef8381f0db5
+  kind: Event
+  lastTimestamp: "2023-10-18T09:09:43Z"
+  message: 'Created pod: router-sharded-7c66cd9fdf-s7p65'
+  metadata:
+    creationTimestamp: "2023-10-18T09:09:43Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-18T09:09:43Z"
+    name: router-sharded-7c66cd9fdf.178f288fe56ed6d1
+    namespace: openshift-ingress
+    resourceVersion: "30129437"
+    uid: 1b8edfa6-cb74-4629-b2f0-9a2468165f09
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-18T09:09:43Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: router-sharded-7c66cd9fdf
+    namespace: openshift-ingress
+    resourceVersion: "30129429"
+    uid: 22d5a24a-ef72-4029-8e03-5ef8381f0db5
+  kind: Event
+  lastTimestamp: "2023-10-18T09:09:43Z"
+  message: 'Created pod: router-sharded-7c66cd9fdf-b8s76'
+  metadata:
+    creationTimestamp: "2023-10-18T09:09:43Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-18T09:09:43Z"
+    name: router-sharded-7c66cd9fdf.178f288fe6d4430c
+    namespace: openshift-ingress
+    resourceVersion: "30129443"
+    uid: 12403194-8284-4c21-8482-eda93c4fe6a4
+  reason: SuccessfulCreate
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-10-18T09:09:42Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: router-sharded
+    namespace: openshift-ingress
+    resourceVersion: "30129425"
+    uid: 5822ff19-c784-4cad-ae6d-2f542bb07310
+  kind: Event
+  lastTimestamp: "2023-10-18T09:09:42Z"
+  message: Scaled up replica set router-sharded-7c66cd9fdf to 2
+  metadata:
+    creationTimestamp: "2023-10-18T09:09:42Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-10-18T09:09:42Z"
+    name: router-sharded.178f288fe209d503
+    namespace: openshift-ingress
+    resourceVersion: "30129433"
+    uid: 58a5c78c-c0f4-4bfb-98b9-e7220b12cd76
+  reason: ScalingReplicaSet
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+kind: EventList
+metadata:
+  resourceVersion: "30130904"

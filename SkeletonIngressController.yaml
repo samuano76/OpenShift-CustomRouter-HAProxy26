@@ -4,7 +4,7 @@ metadata:
   name: sharded
   namespace: openshift-ingress-operator
 spec:
-  domain: ${DOMAIN_NAME}
+  domain: haproxy.apps.labcluster3.lab.upshift.rdu2.redhat.com
   nodePlacement:
     nodeSelector:
       matchLabels:

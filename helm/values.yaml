@@ -4,9 +4,9 @@ tlsCert: "tls.crt"
 tlsKey: "tls.key"
 #ingressFQDN: "secured-apps.cluster-pzhsw.gcp.redhatworkshops.io"
 ingressFQDN: "haproxy.apps.labcluster3.lab.upshift.rdu2.redhat.com"
-#image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:606c91ed7dc3e3f831dd2aaa45e2e43679f0598b6f7bc9fd67c228ec33d15d94
+image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:606c91ed7dc3e3f831dd2aaa45e2e43679f0598b6f7bc9fd67c228ec33d15d94
 #image: docker.io/haproxy:2.6
-image: registry.access.redhat.com/haproxy:2.6
+#image: registry.access.redhat.com/haproxy:2.6
 nodeSelector:
   node-role.kubernetes.io/worker: ""
 #  router-sharded: "yes"

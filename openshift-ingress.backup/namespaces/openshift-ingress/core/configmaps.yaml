@@ -1,0 +1,843 @@
+---
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDMjCCAhqgAwIBAgIIUV6CzJLoqGUwDQYJKoZIhvcNAQELBQAwNzESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSEwHwYDVQQDExhrdWJlLWFwaXNlcnZlci1sYi1zaWduZXIw
+      HhcNMjMwODMxMTYxMDQxWhcNMzMwODI4MTYxMDQxWjA3MRIwEAYDVQQLEwlvcGVu
+      c2hpZnQxITAfBgNVBAMTGGt1YmUtYXBpc2VydmVyLWxiLXNpZ25lcjCCASIwDQYJ
+      KoZIhvcNAQEBBQADggEPADCCAQoCggEBALilKOjiiaRWxMFt8pH7LNKTwR3JSprz
+      k0fZKrnyDYvxPz4WfrVI4BujAE1O2Lgsw+t307o1/zQEakHif3uqVMlRgvF69QaQ
+      TgKXjuOPb94xKvNYxOvsCa0B+2CWEY/Eo8WR0Wi/SZkDUeGA8yehu/gdCt6/2TNC
+      T9dqfVZmjxJWOPF4xpkdA332T03wRmZ5Nv10xd+pCIucUVkrEvtJps9K6u1VVy/X
+      C6WaJODlSif6lA6gVksw3sXu4l1sstkTRx2a+Ejjo3tybOIJeEg4zqKf9NldRX03
+      qGyMGa1uQ+7j6NZxNMIEZ0lx6/TCpOPBJJFvGpDf/Nw9Iv3fV6MkYFsCAwEAAaNC
+      MEAwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFOUO
+      0bO6uUPZvxOOOxlSNlhwfS27MA0GCSqGSIb3DQEBCwUAA4IBAQCQ6eb82S1dqzo0
+      +N5D8RIIKbxclkZ09gtStGxGU3sDhjhfC20hg3dG7ojR04jP6e4//dNgupnRXVJh
+      GHY4qJMJdjxblm3qNrMBUUQrlkMTVRKkQIU+SnfMXXZCpmUVfVlHmsWxON3BbRpu
+      vuF9K5V6atsKp+ivU3XYMyY55TX2j8j5kWXMg2iLBI1y6eSrOL8Njo1EgBzjeCdf
+      0kaou6jxmeizR1TF3qMRCHDPUqIysnIY33y0FTVKZnAbGdiQrJEBwwzs5Lu2LlYo
+      gXm/88v6ay0FG9aO9jViwG9Nx6uiXU7aI2+X0ecxyg0AaATyY1XcNCei81YPEUZA
+      3vEUPHbe
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDQDCCAiigAwIBAgIIdJA6A2r62tkwDQYJKoZIhvcNAQELBQAwPjESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+      c2lnbmVyMB4XDTIzMDgzMTE2MTA0MFoXDTMzMDgyODE2MTA0MFowPjESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+      c2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAydOHu2uHZiJc
+      +59Ub8c0ER7m2KNqgskuYh8WTbcy+v0qf7RyuvEuuEXLHSVHQ1iFKNIjshAkExRL
+      jk2CG+9yCpMn3cUCye0lMAxULH+WKCBpSzrYYOjwVQkK2ny5SSAubsyFMvHACgnz
+      Cc1/oeM6WKC2e4qu96rerD4zdXGaOUDRfUXAPv1Kvfb8zLdLc5OsjWQdnGmRq+2T
+      xj0Z+WRtm8Tfie8NrE7rZ5YxKoKhMhhYlT0SYAftRrBqHrHpdqExlrTHa4VTemts
+      nKjZGNpZQJ5OqDMUl00vtNxnsMm06/isJRu1NMyW3j5jASGQ7GvIH4wg3QYYy8ZJ
+      NWrpiqicMwIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/BAUwAwEB
+      /zAdBgNVHQ4EFgQUsWVaor6wjbjxI1ui9FzXiEHlvR8wDQYJKoZIhvcNAQELBQAD
+      ggEBAB3CUnO7ApEfhMZSivhb8CszIytJeiYohSb2g93GhITwTgp87H7ZtiXKM2Dg
+      TGhnFNZrOUjWj2TPPjrid1+ghXDxBuK8n+LDN4DVmbYqNQ00bQLZ/JzU3is1cR2x
+      5uvAtF+p+mG9addFftDnzVbwGxCvZK7jaY3ogTAf8bLvItWUBRdGnsjkl7AhJJeB
+      slkMld7f7WpMPDg8d19mRdAmelICXmmrQ8lzoB7eLN7lITYQgSpB03K7S/rVMK93
+      Bg/uP7BHWdiH819ICv3NiMHE4BA4t/Hzlxi71OBuZYo8E9hNQpbtH8e2eny+ZrHv
+      7WGzFVlo7GeETaP4b0XkfUIY2+I=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDTDCCAjSgAwIBAgIIN2Uz/k/nImUwDQYJKoZIhvcNAQELBQAwRDESMBAGA1UE
+      CxMJb3BlbnNoaWZ0MS4wLAYDVQQDEyVrdWJlLWFwaXNlcnZlci1zZXJ2aWNlLW5l
+      dHdvcmstc2lnbmVyMB4XDTIzMDgzMTE2MTA0MFoXDTMzMDgyODE2MTA0MFowRDES
+      MBAGA1UECxMJb3BlbnNoaWZ0MS4wLAYDVQQDEyVrdWJlLWFwaXNlcnZlci1zZXJ2
+      aWNlLW5ldHdvcmstc2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+      AQEAuZYh7CNHMZ4G1qhLBoj6YNVuGs3OUaOCxp2nkipwrz/Aa1SVf/MvV5BoiHTm
+      3SRlLWtyUIDkJtNZaQPgRhNnabkLHQDV1NlAO2CI7XyNa0N60M/IwSX8GMKQcLjP
+      Q28WH82IXksOqEs3QaZBRkya2vbxug9Xpd0gDjATxqTGzrkUDT9OwUd8OUehadzU
+      IFTKbLw4yTPn88gUjH5ohofsspqCCDMDVTOsu8HsokNsqO0rNKeQf19wHK6qypE8
+      0G7u8hbBSYlJYdEYNvwGFd69hVuFzwOVhHprpsbPC8j5ncaKzLbSPqjPUlk8EOpW
+      7IOgnYPbqg1ZgSD8a6ZGPHGSYQIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYD
+      VR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUmBuTIdp5MID+927+75wC7Kb90dIwDQYJ
+      KoZIhvcNAQELBQADggEBABmPb0GOr9eau0pKZJZAI1BWeDhR4QCAFAQTUhNnts93
+      7eD1WXnpWK26ZKUSQ70/wuZ9zAc87pSblJ1D5r8Fz8sOeuZo6G8tPN63/bePA0Po
+      f0iP+/asx6RFK8bpEKuZqBaz0bCI3ssoSIzQ+9Ql8UekmsAS90fXuO0o39Hw1Zlr
+      FivwtOiaGIwQ2p5szZIfTWI8gPIbvE7QDaRXZXwN+HAbVQnIDb5UYefi+Ar9LxlB
+      Nr4eSLzWsvP+JFffUUSEblAoOB2tv5gSH3pp70XlwjPOrvawNMpZdvh1lby+PBY8
+      9QUZN4fHaNPFOwynnkn6GXlfNZbcip+C6nRcOw+YseM=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDlzCCAn+gAwIBAgIIQIIGfl5DQ8owDQYJKoZIhvcNAQELBQAwWTFXMFUGA1UE
+      AwxOb3BlbnNoaWZ0LWt1YmUtYXBpc2VydmVyLW9wZXJhdG9yX2xvY2FsaG9zdC1y
+      ZWNvdmVyeS1zZXJ2aW5nLXNpZ25lckAxNjkzNDk5MjM1MB4XDTIzMDgzMTE2Mjcx
+      NVoXDTMzMDgyODE2MjcxNlowWTFXMFUGA1UEAwxOb3BlbnNoaWZ0LWt1YmUtYXBp
+      c2VydmVyLW9wZXJhdG9yX2xvY2FsaG9zdC1yZWNvdmVyeS1zZXJ2aW5nLXNpZ25l
+      ckAxNjkzNDk5MjM1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2kfN
+      9zX1x70lfTKLXoNC/z1e9uDx5inYWr0M5l4dp18KqCNTr6UWFphDItvwPxkUmbgM
+      tSG6705mg1g8Df51s3X33eXxglONhSLFjS8TU4x1fpxFrmL2n7N844FiZ3F0J1yN
+      qfJKldsngh0FkkN9QSNFPqDVLnN5e7TVvl7Mx8usmqeibWG3oinQy3zPblqrLRmc
+      HgELWAqfHWOZdlyC55+aRTbLZbuvKgLB0/cEFVd0Hg+tU2H2VC3ocgXZ0ghoszBD
+      /p+lZnyRo2cA5KWMaVzAidwdowaVNFSOEIhgdmlgHT5DzgJweAQ/8FV8jXH5ajTL
+      vQKg1joLQVAbB20qOQIDAQABo2MwYTAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/
+      BAUwAwEB/zAdBgNVHQ4EFgQU6jfcsg17O3d1ONi/driEiBAkOkkwHwYDVR0jBBgw
+      FoAU6jfcsg17O3d1ONi/driEiBAkOkkwDQYJKoZIhvcNAQELBQADggEBAEwN9sA2
+      Zr4ntGZLKXGc/1Fdtr51RDvjeJ4c7rS0Y7B1+STuHsKQzpljzKcy6VNzP0XgfPTu
+      68EVAG8HlGXGgzmCkZNAiPFt33ovnKnRIosnWUl/JPWRq3eaN5PSkLDBVRfJSrQw
+      WHPZ6jXNtJ85AivxnBrw9QvDC7y69Jx7hlf0WD1rNPUmP3YYId62xzR02lO8pqf+
+      uGCLZaIqapfHIhc+Bw3XqulspyONgItGKtV69veUzZsVg55cW17Ehxf9b93PX1/5
+      pwJuCKXNXspkkkR6eYDEdPmK+3JgO8zI35AR1Qp9aYrRHgMc6n5R3+ggYUgQyCvv
+      ZFDP/nr8IiVu1iI=
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDkzCCAnugAwIBAgIIFBwG9ww0WrAwDQYJKoZIhvcNAQELBQAwJjEkMCIGA1UE
+      AwwbaW5ncmVzcy1vcGVyYXRvckAxNjkzNDk5MzE2MB4XDTIzMDgzMTE2MjgzNloX
+      DTI1MDgzMDE2MjgzN1owOTE3MDUGA1UEAwwuKi5hcHBzLmxhYmNsdXN0ZXIzLmxh
+      Yi51cHNoaWZ0LnJkdTIucmVkaGF0LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+      ADCCAQoCggEBAMORQAceOnsgFh8vSYKbqVlIXIdcc3Qi2PpeWwCOibP04K6+2rlm
+      eXT9Nvf7QuPuphqhW6noDZ+aWyRPTw3T6+kHRuaS42pDwqd6iq1CQCDxlip4QJfe
+      KpX1A77U26cJugOMQCPVQ+mJnutCZnzZ8LUwaJUZt5tBNjdayxDZEKmIHWgFwoO/
+      pQSga6vJwNEuNPpJWOIYWuoCNeVa4IhnbeNYbtRMdwSeNVDqAxYlFSGZccQlvYwe
+      OKSZArWL2ocvYkCJ8bbIojskDQsDP5Gor3dLaHRLUuefREPNrcVwzIoK9m7Ss82V
+      /KdyW2CYHGarTPAI8MoFh7MNqnvnSSL1lekCAwEAAaOBsTCBrjAOBgNVHQ8BAf8E
+      BAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4E
+      FgQUP9Sll1RTPM+wY5c00FJ3/7zjLBQwHwYDVR0jBBgwFoAUhXUKoRJdpdLzX5qa
+      d7cBiYc0RqMwOQYDVR0RBDIwMIIuKi5hcHBzLmxhYmNsdXN0ZXIzLmxhYi51cHNo
+      aWZ0LnJkdTIucmVkaGF0LmNvbTANBgkqhkiG9w0BAQsFAAOCAQEAUkLeOU3xUUZb
+      mS7zaxyySO51Z8qzM3BfhlAIUfReQxNnRCrOvhXCXXuLnyAYVHEQ2hDtEt9hZ395
+      rH0iJFSq5SNNFy7i5+iih3PGjPuqsw8mBOfPn1QjakK4hc8TbNicdLEoyAC02gEN
+      LXk+nEKP1KvSV+WAorZefTm7wbBO6fDyu/gB/RxseXO9X+dvzk+3M+d8LkpQSYPV
+      I3r+3vNVP01HsMnVRUO39VxDYyDq8WKdNsbkXjYdtjYG7On1bvDhg2jZz0tYUBUP
+      5dmiBC0JlfIUePZLFBIuZrCFA06pUv6zUqmWTrDL0rx8g6i7HkwSrEEMYeU9hKP1
+      94PZ8p7sIA==
+      -----END CERTIFICATE-----
+      -----BEGIN CERTIFICATE-----
+      MIIDDDCCAfSgAwIBAgIBATANBgkqhkiG9w0BAQsFADAmMSQwIgYDVQQDDBtpbmdy
+      ZXNzLW9wZXJhdG9yQDE2OTM0OTkzMTYwHhcNMjMwODMxMTYyODM1WhcNMjUwODMw
+      MTYyODM2WjAmMSQwIgYDVQQDDBtpbmdyZXNzLW9wZXJhdG9yQDE2OTM0OTkzMTYw
+      ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDM9vWYNlTANcmxdjeTjGAq
+      nbEb0Dtgzm5lYkZfNMtmpTItAwcsHSWbxn5GSBX/WLV9MY9az/g72/goIObPgv9y
+      NjwLy/oHyRtYVo7CdPB2pem4Fk3CGNMtGtvwsZBnDLWfJe93sxt/plPIVxtrTdSh
+      XckYXCoB/hZTIJnFFnDBADPJ6dSIgalBNJf6jMApkzNWrStjLDjs9QfkHChmzXwo
+      orUMMdThtIPs+I79/5Tb2B+0+wDeDdz2eAGyB0NFdgejx2ItIt9RtsfrMQYPu9Ko
+      tewKIxLUWT2NnpXpuwQlqT3ZHUWAo6wvWm1ivShtUSlZNBBqPQibesBviJgvF2Ob
+      AgMBAAGjRTBDMA4GA1UdDwEB/wQEAwICpDASBgNVHRMBAf8ECDAGAQH/AgEAMB0G
+      A1UdDgQWBBSFdQqhEl2l0vNfmpp3twGJhzRGozANBgkqhkiG9w0BAQsFAAOCAQEA
+      UtJLFm4V517EgxopXHHAZnjNjOaNphdGZTjKV5ccUeJvJe5tjVBoh5bEBBMGZSR3
+      N+2S49vh2OL5AO4mwjoM774LqftYGQaJElN7e5qcfdw/qs/u7U1AOUIAr9EagLCd
+      EADx+0y6GcuVxQwj7Cd9lLYNNViXrr0NXpHCDQjp0OarZpoKVfh4Z9Jj+e48TeAA
+      XB5lGGYjU3JwPyUjrk18kZkv6O89Zr6B01t5mxjEy8xh4iOUP6vBzAxqIWZt76Fd
+      8PWwv9oHCdLLQMs+Zp6pYqflsFXanli17nBeD5Lgq0t2zy1Fm5/1+MU1yDMP6i9h
+      mj6quBfuZmf/BJWGasIBOQ==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      kubernetes.io/description: Contains a CA bundle that can be used to verify the
+        kube-apiserver when using internal endpoints such as the internal service
+        IP or kubernetes.default.svc. No other usage is guaranteed across distributions
+        of Kubernetes clusters.
+    creationTimestamp: "2023-08-31T16:28:36Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:ca.crt: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubernetes.io/description: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-08-31T16:32:54Z"
+    name: kube-root-ca.crt
+    namespace: openshift-ingress
+    resourceVersion: "16803"
+    uid: bde8f3ce-6e7f-4aad-960c-42c28f636b7a
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIDLXwHZxdwHgwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTY5MzQ5OTIzODAe
+      Fw0yMzA4MzExNjI3MTdaFw0yNTEwMjkxNjI3MThaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE2OTM0OTkyMzgwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCr5iB0VsfJMaZLoO0M2sCdhqFn7JRGmdlI
+      s4roWLTEggqd6VeMybsfb9K5CwqvzWYBT3Dt0XBoq6kbHpx6ir+japRKj/dh87Zx
+      m/LI9CczQwJF84Nl2F8wKRFNHOCGIRY1E+zyeZzZuzHuhVdch6QsvE73ggw8WDNy
+      w0sCtv/3YUvM7RH5kI0AA9/nDdU+ICh5kk/5mOBkpVwvu6xjWMGg4jFIpSveVPQp
+      xy7GUQ28Vf4ffcfnIeNJqnK3OLvCkP7M0ZqYdJgRauB3EdkwXaDQki9OJFHdY9gL
+      elW44w6e41IAyLdp6pqWR5vA0QFer2/oogX2TW+Zkgekqexk2/lzAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQRz+25
+      Kq3A4AYo6GG87IHoBWHIIDAfBgNVHSMEGDAWgBQRz+25Kq3A4AYo6GG87IHoBWHI
+      IDANBgkqhkiG9w0BAQsFAAOCAQEAk9GDOkfnwk1D//TDh+a+lXkgEynci5MU/Eyw
+      WfffpZW7Tyj2KUEQLkDnfO8QPgVSQlzREXUzwXoxKBQ0cJgOjgILp71ke9LENwdx
+      IAHdgwHdFp9VlgKYFLn+cd725VxkUIqnT/GlTuHXXer4AoL19I65ABtRYtPOp16r
+      xmrRF4dnKMs2gNO5wtQAqH8Ca6k5okX7jhtTJVa4BTFpvKLhxBo0uycXNhT3+63o
+      dRBr+l4E314gmEw+s2yy20+lEkr32SH6HBbOcAtO5wzH5PuCpNR/XqCs7bwH3rVv
+      A809dVNsUB5hE2kxprCs/AdbdMFaoaIn8b7k+BpwsPJTwS59qw==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      service.beta.openshift.io/inject-cabundle: "true"
+    creationTimestamp: "2023-08-31T16:28:36Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:service.beta.openshift.io/inject-cabundle: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          f:service-ca.crt: {}
+      manager: service-ca-operator
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    name: openshift-service-ca.crt
+    namespace: openshift-ingress
+    resourceVersion: "9398"
+    uid: 778ec7aa-e0b1-4fea-9187-39e8ade7dc30
+- apiVersion: v1
+  data:
+    haproxy-config.template: "{{/*\r\n    haproxy-config.cfg: contains the main config
+      with helper backends that are used to terminate\r\n    \t\t\t\t\tencryption
+      before finally sending to a host_be which is the backend that is the final\r\n
+      \   \t\t\t\t\tbackend for a route and contains all the endpoints for the service\r\n*/}}\r\n{{-
+      define \"conf/haproxy.config\" }}\r\n{{- $workingDir := .WorkingDir }}\r\n{{-
+      $defaultDestinationCA := .DefaultDestinationCA }}\r\n{{- $dynamicConfigManager
+      := .DynamicConfigManager }}\r\n{{- $router_ip_v4_v6_mode := env \"ROUTER_IP_V4_V6_MODE\"
+      \"v4\" }}\r\n{{- $router_disable_http2 := env \"ROUTER_DISABLE_HTTP2\" \"false\"
+      }}\r\n{{- $haveClientCA := .HaveClientCA }}\r\n{{- $haveCRLs := .HaveCRLs }}\r\n\r\n\r\n{{-
+      /* A bunch of regular expressions.  Each should be wrapped in (?:) so that it
+      is safe to include bare */}}\r\n{{- /* quadPattern: Match a quad in an IP address;
+      e.g. 123 */}}\r\n{{- $quadPattern := `(?:[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])`
+      -}}\r\n\r\n{{- /* cookie name pattern: */}}\r\n{{- $cookieNamePattern := `[a-zA-Z0-9_-]+`
+      -}}\r\n\r\n{{- /* balanceAlgoPattern matches valid options for the haproxy.router.openshift.io/balance
+      annotation. */}}\r\n{{- $balanceAlgoPattern := \"roundrobin|leastconn|source|random\"
+      -}}\r\n\r\n{{- $timeSpecPattern := `[1-9][0-9]*(us|ms|s|m|h|d)?` }}\r\n\r\n{{-
+      /* hsts header in response: */}}\r\n{{- /* Not fully compliant to RFC6797#6.1
+      yet: has to accept not conformant directives */}}\r\n{{- $hstsOptionalTokenPattern
+      := `(?:includeSubDomains|preload)` }}\r\n{{- $hstsPattern := printf `(?i)(?:%[1]s\\s*[;]\\s*)*max-age\\s*=\\s*(?:\\d+|\"\\d+\")(?:\\s*[;]\\s*%[1]s)*`
+      \ $hstsOptionalTokenPattern -}}\r\n\r\n{{- /* setForwardedHeadersPattern matches
+      valid options for how and when Forwarded: and X-Forwarded-*: headers are set.
+      */}}\r\n{{- $setForwardedHeadersPattern := `(?:append|replace|if-none|never)`
+      -}}\r\n\r\n{{- /* Route-Specific Annotations */}}\r\n{{- /* setForwardedHeadersAnnotation
+      configures how Forwarded: and X-Forwarded-*: headers are set.  */}}\r\n{{- $setForwardedHeadersAnnotation
+      := \"haproxy.router.openshift.io/set-forwarded-headers\" }}\r\n{{- /* setForwardedHeadersDefaultValue
+      is the default value if a route does not have the setForwardedHeadersAnnotation
+      annotation.  */}}\r\n{{- $setForwardedHeadersDefaultValue := firstMatch $setForwardedHeadersPattern
+      (env \"ROUTER_SET_FORWARDED_HEADERS\" \"append\") \"append\" -}}\r\n\r\n{{-
+      /* pathRewriteTargetPattern: Match path rewrite-Target */}}\r\n{{- $pathRewriteTargetPattern
+      := `^/.*$` -}}\r\n\r\nglobal\r\n{{- with $value := clipHAProxyTimeoutValue (firstMatch
+      $timeSpecPattern (env \"ROUTER_HARD_STOP_AFTER\")) }}\r\n  hard-stop-after {{
+      $value }}\r\n{{- end }}\r\n{{- with $value := env \"ROUTER_MAX_CONNECTIONS\"
+      \"50000\" }}\r\n  {{- if isInteger $value }}\r\n  maxconn {{ $value }}\r\n  {{-
+      end }}\r\n{{- end }}\r\n{{- $threads := env \"ROUTER_THREADS\" }}\r\n{{- if
+      ne \"\" (firstMatch \"[1-9][0-9]*\" $threads) }}\r\n  nbthread {{ $threads }}\r\n{{-
+      end }}\r\n\r\n\r\n\r\n  daemon\r\n{{- with (env \"ROUTER_SYSLOG_ADDRESS\") }}\r\n
+      \ log {{ . }} len {{ env \"ROUTER_LOG_MAX_LENGTH\" \"1024\" }} {{ env \"ROUTER_LOG_FACILITY\"
+      \"local1\" }} {{ env \"ROUTER_LOG_LEVEL\" \"warning\" }}\r\n  log-send-hostname\r\n{{-
+      end }}\r\n  ca-base /etc/ssl\r\n  crt-base /etc/ssl\r\n  # TODO: Check if we
+      can get reload to be faster by saving server state.\r\n  # server-state-file
+      /var/lib/haproxy/run/haproxy.state\r\n  stats socket /var/lib/haproxy/run/haproxy.sock
+      mode 600 level admin expose-fd listeners\r\n  stats timeout 2m\r\n\r\n  # Increase
+      the default request size to be comparable to modern cloud load balancers (ALB:
+      64kb), affects\r\n  # total memory use when large numbers of connections are
+      open.\r\n  # In OCP 4.8, this value is adjustable via the IngressController
+      API.\r\n  # Cluster administrators are still encouraged to use the default values
+      provided below.\r\n  tune.maxrewrite {{ env \"ROUTER_MAX_REWRITE_SIZE\" \"8192\"
+      }}\r\n  tune.bufsize {{ env \"ROUTER_BUF_SIZE\" \"32768\" }}\r\n\r\n{{- range
+      $idx, $adjustment := .HTTPHeaderNameCaseAdjustments }}\r\n  h1-case-adjust {{
+      $adjustment.From }} {{ $adjustment.To }}\r\n{{- end }}\r\n\r\n  # Configure
+      the TLS versions we support\r\n  ssl-default-bind-options ssl-min-ver {{ env
+      \"SSL_MIN_VERSION\" \"TLSv1.2\" }}\r\n{{- if ne (env \"SSL_MAX_VERSION\" \"\")
+      \"\" }} ssl-max-ver {{env \"SSL_MAX_VERSION\" }}{{ end }}\r\n\r\n# The default
+      cipher suite can be selected from the three sets recommended by https://wiki.mozilla.org/Security/Server_Side_TLS,\r\n#
+      or the user can provide one using the ROUTER_CIPHERS environment variable.\r\n#
+      By default when a cipher set is not provided, intermediate is used.\r\n  {{-
+      if eq (env \"ROUTER_CIPHERS\" \"intermediate\") \"modern\" }}\r\n  # Modern
+      cipher suite (no legacy browser support) from https://wiki.mozilla.org/Security/Server_Side_TLS\r\n
+      \ tune.ssl.default-dh-param 2048\r\n  ssl-default-bind-ciphers ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256\r\n
+      \ {{ else }}\r\n\r\n    {{- if eq (env \"ROUTER_CIPHERS\" \"intermediate\")
+      \"intermediate\" }}\r\n  # Intermediate cipher suite (default) from https://wiki.mozilla.org/Security/Server_Side_TLS\r\n
+      \ tune.ssl.default-dh-param 2048\r\n  ssl-default-bind-ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS\r\n
+      \   {{ else }}\r\n\r\n      {{- if eq (env \"ROUTER_CIPHERS\" \"intermediate\")
+      \"old\" }}\r\n\r\n  # Old cipher suite (maximum compatibility but insecure)
+      from https://wiki.mozilla.org/Security/Server_Side_TLS\r\n  tune.ssl.default-dh-param
+      1024\r\n  ssl-default-bind-ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:ECDHE-RSA-DES-CBC3-SHA:ECDHE-ECDSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:DES-CBC3-SHA:HIGH:SEED:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!RSAPSK:!aDH:!aECDH:!EDH-DSS-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA:!SRP\r\n\r\n
+      \     {{- else }}\r\n  # user provided list of ciphers (Colon separated list
+      as seen above)\r\n  # the env default is not used here since we can't get here
+      with empty ROUTER_CIPHERS\r\n  tune.ssl.default-dh-param 2048\r\n  ssl-default-bind-ciphers
+      {{ env \"ROUTER_CIPHERS\" \"ECDHE-ECDSA-CHACHA20-POLY1305\" }}\r\n      {{-
+      end }}\r\n    {{- end }}\r\n  {{- end }}\r\n  {{/*\r\n    The ssl-default-bind-ciphers
+      option above configures ciphers for TLSv1.0,\r\n    TLSv1.1, and TLSv1.2; for
+      TLSv1.3, cipher suites are configured using the\r\n    ssl-default-bind-ciphersuites
+      option below.\r\n  */}}\r\n  {{- with $ciphersuites := (env \"ROUTER_CIPHERSUITES\")
+      }}\r\n  ssl-default-bind-ciphersuites {{ $ciphersuites }}\r\n  {{- end }}\r\n\r\ndefaults\r\n
+      \ {{- with $value := env \"ROUTER_MAX_CONNECTIONS\" \"50000\" }}\r\n    {{-
+      if isInteger $value }}\r\n  maxconn {{ $value }}\r\n    {{- end }}\r\n  {{-
+      end }}\r\n\r\n  {{- if ne (env \"ROUTER_SYSLOG_ADDRESS\") \"\" }}\r\n    {{-
+      if ne (env \"ROUTER_SYSLOG_FORMAT\") \"\" }}\r\n  log-format {{ env \"ROUTER_SYSLOG_FORMAT\"
+      }}\r\n    {{- else }}\r\n  option httplog\r\n    {{- end }}\r\n  log global\r\n
+      \ {{- end }}\r\n\r\n  # To configure custom default errors, you can either uncomment
+      the\r\n  # line below (server ... 127.0.0.1:8080) and point it to your custom\r\n
+      \ # backend service or alternatively, you can send a custom 503 or 404 error.\r\n
+      \ #\r\n  # server openshift_backend 127.0.0.1:8080\r\n  errorfile 503 {{ env
+      \"ROUTER_ERRORFILE_503\" \"/var/lib/haproxy/conf/error-page-503.http\" }}\r\n
+      \ errorfile 404 {{ env \"ROUTER_ERRORFILE_404\" \"/var/lib/haproxy/conf/error-page-404.http\"
+      }}\r\n\r\n  timeout connect {{ firstMatch $timeSpecPattern (env \"ROUTER_DEFAULT_CONNECT_TIMEOUT\")
+      \"5s\" }}\r\n  timeout client {{ firstMatch $timeSpecPattern (env \"ROUTER_DEFAULT_CLIENT_TIMEOUT\")
+      \"30s\" }}\r\n  timeout client-fin {{ firstMatch $timeSpecPattern (env \"ROUTER_CLIENT_FIN_TIMEOUT\")
+      \"1s\" }}\r\n  timeout server {{ firstMatch $timeSpecPattern (env \"ROUTER_DEFAULT_SERVER_TIMEOUT\")
+      \"30s\" }}\r\n  timeout server-fin {{ firstMatch $timeSpecPattern (env \"ROUTER_DEFAULT_SERVER_FIN_TIMEOUT\")
+      \"1s\" }}\r\n  timeout http-request {{ firstMatch $timeSpecPattern (env \"ROUTER_SLOWLORIS_TIMEOUT\")
+      \"10s\" }}\r\n  timeout http-keep-alive {{ firstMatch $timeSpecPattern (env
+      \"ROUTER_SLOWLORIS_HTTP_KEEPALIVE\") \"300s\" }}\r\n\r\n  # Long timeout for
+      WebSocket connections.\r\n  timeout tunnel {{ firstMatch $timeSpecPattern (env
+      \"ROUTER_DEFAULT_TUNNEL_TIMEOUT\") \"1h\" }}\r\n\r\n  {{- if isTrue (env \"ROUTER_ENABLE_COMPRESSION\")
+      }}\r\n  compression algo gzip\r\n  compression type {{ env \"ROUTER_COMPRESSION_MIME\"
+      \"text/html text/plain text/css\" }}\r\n  {{- end }}\r\n\r\n  {{- if isTrue
+      (env \"ROUTER_DONT_LOG_NULL\") }}\r\n  option dontlognull\r\n  {{- end }}\r\n
+      \ {{- if isTrue (env \"ROUTER_HTTP_IGNORE_PROBES\") }}\r\n  option http-ignore-probes\r\n
+      \ {{- end }}\r\n  {{- if .HTTPHeaderNameCaseAdjustments }}\r\n  option h1-case-adjust-bogus-client\r\n
+      \ {{- end }}\r\n\r\n  {{ if (gt .StatsPort -1) }}\r\nlisten stats\r\n  bind
+      :{{ if (gt .StatsPort 0) }}{{ .StatsPort }}{{ else }}1936{{ end }}\r\n  mode
+      http\r\n  # Health check monitoring uri.\r\n  monitor-uri /healthz\r\n\r\n    {{-
+      if and (and (ne .StatsUser \"\") (ne .StatsPassword \"\")) (gt .StatsPort 0)
+      }}\r\n  # Add your custom health check monitoring failure condition here.\r\n
+      \ # monitor fail if <condition>\r\n  stats enable\r\n  stats hide-version\r\n
+      \ stats realm Haproxy\\ Statistics\r\n  stats uri /\r\n  stats auth {{ .StatsUser
+      }}:{{ .StatsPassword }}\r\n    {{- end }}\r\n  {{- end }}\r\n\r\n  {{ if .BindPorts
+      -}}\r\nfrontend public\r\n    {{ if eq \"v4v6\" $router_ip_v4_v6_mode }}\r\n
+      \ bind :{{ env \"ROUTER_SERVICE_HTTP_PORT\" \"80\" }}{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\")
+      }} accept-proxy{{ end }}\r\n  bind :::{{ env \"ROUTER_SERVICE_HTTP_PORT\" \"80\"
+      }} v6only{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\") }} accept-proxy{{
+      end }}\r\n    {{- else if eq \"v6\" $router_ip_v4_v6_mode }}\r\n  bind :::{{
+      env \"ROUTER_SERVICE_HTTP_PORT\" \"80\" }} v6only{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\")
+      }} accept-proxy{{ end }}\r\n    {{- else }}\r\n  bind :{{ env \"ROUTER_SERVICE_HTTP_PORT\"
+      \"80\" }}{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\") }} accept-proxy{{
+      end }}\r\n    {{- end }}\r\n  mode http\r\n  tcp-request inspect-delay {{ firstMatch
+      $timeSpecPattern (env \"ROUTER_INSPECT_DELAY\") \"5s\" }}\r\n  tcp-request content
+      accept if HTTP\r\n\r\n    {{- if (eq .StatsPort -1) }}\r\n  monitor-uri /_______internal_router_healthz\r\n
+      \   {{- end }}\r\n\r\n    {{- range $idx, $captureHeader := .CaptureHTTPRequestHeaders
+      }}\r\n  capture request header {{ $captureHeader.Name }} len {{ $captureHeader.MaxLength
+      }}\r\n    {{- end }}\r\n    {{- range $idx, $captureHeader := .CaptureHTTPResponseHeaders
+      }}\r\n  capture response header {{ $captureHeader.Name }} len {{ $captureHeader.MaxLength
+      }}\r\n    {{- end }}\r\n    {{- with $captureCookie := .CaptureHTTPCookie }}\r\n
+      \ capture cookie {{ $captureCookie.Name }}{{ if eq $captureCookie.MatchType
+      \"exact\" }}={{ end }} len {{ $captureCookie.MaxLength }}\r\n    {{- end }}\r\n\r\n
+      \ # Strip off Proxy headers to prevent HTTpoxy (https://httpoxy.org/)\r\n  http-request
+      del-header Proxy\r\n\r\n  # DNS labels are case insensitive (RFC 4343), we need
+      to convert the hostname into lowercase\r\n  # before matching, or any requests
+      containing uppercase characters will never match.\r\n  http-request set-header
+      Host %[req.hdr(Host),lower]\r\n\r\n    {{- if and (ne (env \"ROUTER_UNIQUE_ID_FORMAT\")
+      \"\") (ne (env \"ROUTER_UNIQUE_ID_HEADER_NAME\") \"\") }}\r\n  unique-id-format
+      {{ env \"ROUTER_UNIQUE_ID_FORMAT\" }}\r\n  unique-id-header {{ env \"ROUTER_UNIQUE_ID_HEADER_NAME\"
+      }}\r\n    {{- end }}\r\n\r\n  # check if we need to redirect/force using https.\r\n
+      \ acl secure_redirect base,map_reg_int(/var/lib/haproxy/conf/os_route_http_redirect.map)
+      -m bool\r\n  redirect scheme https if secure_redirect\r\n\r\n  use_backend %[base,map_reg(/var/lib/haproxy/conf/os_http_be.map)]\r\n\r\n
+      \ default_backend openshift_default\r\n\r\n# public ssl accepts all connections
+      and isn't checking certificates yet certificates to use will be\r\n# determined
+      by the next backend in the chain which may be an app backend (passthrough termination)
+      or a backend\r\n# that terminates encryption in this router (edge)\r\nfrontend
+      public_ssl\r\n    {{- if ne (env \"ROUTER_SYSLOG_ADDRESS\") \"\" }}\r\n  option
+      tcplog\r\n    {{- end }}\r\n    {{ if eq \"v4v6\" $router_ip_v4_v6_mode }}\r\n
+      \ bind :{{ env \"ROUTER_SERVICE_HTTPS_PORT\" \"443\" }}{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\")
+      }} accept-proxy{{ end }}\r\n  bind :::{{ env \"ROUTER_SERVICE_HTTPS_PORT\" \"443\"
+      }} v6only{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\") }} accept-proxy{{
+      end }}\r\n    {{- else if eq \"v6\" $router_ip_v4_v6_mode }}\r\n  bind :::{{
+      env \"ROUTER_SERVICE_HTTPS_PORT\" \"443\" }} v6only{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\")
+      }} accept-proxy{{ end }}\r\n    {{- else }}\r\n  bind :{{ env \"ROUTER_SERVICE_HTTPS_PORT\"
+      \"443\" }}{{ if isTrue (env \"ROUTER_USE_PROXY_PROTOCOL\") }} accept-proxy{{
+      end }}\r\n    {{- end }}\r\n  tcp-request inspect-delay {{ firstMatch $timeSpecPattern
+      (env \"ROUTER_INSPECT_DELAY\") \"5s\" }}\r\n  tcp-request content accept if
+      { req_ssl_hello_type 1 }\r\n\r\n  # if the connection is SNI and the route is
+      a passthrough don't use the termination backend, just use the tcp backend\r\n
+      \ # for the SNI case, we also need to compare it in case-insensitive mode (by
+      converting it to lowercase) as RFC 4343 says\r\n  acl sni req.ssl_sni -m found\r\n
+      \ acl sni_passthrough req.ssl_sni,lower,map_reg(/var/lib/haproxy/conf/os_sni_passthrough.map)
+      -m found\r\n  use_backend %[req.ssl_sni,lower,map_reg(/var/lib/haproxy/conf/os_tcp_be.map)]
+      if sni sni_passthrough\r\n\r\n  # if the route is SNI and NOT passthrough enter
+      the termination flow\r\n  use_backend be_sni if sni\r\n\r\n  # non SNI requests
+      should enter a default termination backend rather than the custom cert SNI backend
+      since it\r\n  # will not be able to match a cert to an SNI host\r\n  default_backend
+      be_no_sni\r\n\r\n##########################################################################\r\n#
+      TLS SNI\r\n#\r\n# When using SNI we can terminate encryption with custom certificates.\r\n#
+      Certs will be stored in a directory and will be matched with the SNI host header\r\n#
+      which must exist in the CN of the certificate.  Certificates must be concatenated\r\n#
+      as a single file (handled by the plugin writer) per the haproxy documentation.\r\n#\r\n#
+      Finally, check re-encryption settings and re-encrypt or just pass along the
+      unencrypted\r\n# traffic\r\n##########################################################################\r\nbackend
+      be_sni\r\n  server fe_sni unix@/var/lib/haproxy/run/haproxy-sni.sock weight
+      1 send-proxy\r\n\r\nfrontend fe_sni\r\n  # terminate ssl on edge\r\n  bind unix@/var/lib/haproxy/run/haproxy-sni.sock
+      ssl\r\n  {{- if isTrue (env \"ROUTER_STRICT_SNI\") }} strict-sni {{ end }}\r\n
+      \   {{- \"\" }} crt {{firstMatch \".+\" .DefaultCertificate \"/var/lib/haproxy/conf/default_pub_keys.pem\"
+      }}\r\n    {{- \"\" }} crt-list /var/lib/haproxy/conf/cert_config.map accept-proxy\r\n
+      \   {{- with (env \"ROUTER_MUTUAL_TLS_AUTH\") }}\r\n      {{- \"\" }} verify
+      {{. }}\r\n      {{- if (ne (env \"ROUTER_MUTUAL_TLS_AUTH_CRL\") \"\") }}\r\n
+      \       {{- with (env \"ROUTER_MUTUAL_TLS_AUTH_CA\") }} ca-file {{. }} {{ else
+      }} ca-file /etc/ssl/certs/ca-bundle.trust.crt {{ end }}\r\n        {{- with
+      (env \"ROUTER_MUTUAL_TLS_AUTH_CRL\") }} crl-file {{. }} {{ end }}\r\n      {{-
+      else }}\r\n        {{- if $haveClientCA }} ca-file /var/lib/haproxy/mtls/latest/ca-bundle.pem
+      {{ else }} ca-file /etc/ssl/certs/ca-bundle.trust.crt {{ end }}\r\n        {{-
+      if $haveCRLs }} crl-file /var/lib/haproxy/mtls/latest/crls.pem {{ end }}\r\n
+      \     {{- end }}\r\n    {{- end }}\r\n  mode http\r\n\r\n    {{- range $idx,
+      $captureHeader := .CaptureHTTPRequestHeaders }}\r\n  capture request header
+      {{ $captureHeader.Name }} len {{ $captureHeader.MaxLength }}\r\n    {{- end
+      }}\r\n    {{- range $idx, $captureHeader := .CaptureHTTPResponseHeaders }}\r\n
+      \ capture response header {{ $captureHeader.Name }} len {{ $captureHeader.MaxLength
+      }}\r\n    {{- end }}\r\n    {{- with $captureCookie := .CaptureHTTPCookie }}\r\n
+      \ capture cookie {{ $captureCookie.Name }}{{ if eq $captureCookie.MatchType
+      \"exact\" }}={{ end }} len {{ $captureCookie.MaxLength }}\r\n    {{- end }}\r\n\r\n
+      \ # Strip off Proxy headers to prevent HTTpoxy (https://httpoxy.org/)\r\n  http-request
+      del-header Proxy\r\n\r\n  # DNS labels are case insensitive (RFC 4343), we need
+      to convert the hostname into lowercase\r\n  # before matching, or any requests
+      containing uppercase characters will never match.\r\n  http-request set-header
+      Host %[req.hdr(Host),lower]\r\n\r\n    {{- if and (ne (env \"ROUTER_UNIQUE_ID_FORMAT\")
+      \"\") (ne (env \"ROUTER_UNIQUE_ID_HEADER_NAME\") \"\") }}\r\n  unique-id-format
+      {{ env \"ROUTER_UNIQUE_ID_FORMAT\" }}\r\n  unique-id-header {{ env \"ROUTER_UNIQUE_ID_HEADER_NAME\"
+      }}\r\n    {{- end }}\r\n\r\n    {{ if ne (env \"ROUTER_MUTUAL_TLS_AUTH\" \"none\")
+      \"none\" }}\r\n      {{- with (env \"ROUTER_MUTUAL_TLS_AUTH_FILTER\") }}\r\n
+      \ # If a mutual TLS auth subject filter environment variable is set, we deny\r\n
+      \ # requests if the DN field in the client certificate doesn't match that value.\r\n
+      \ # Please note that this match is a regular expression match.\r\n  # Example:
+      For DN set to: /CN=header.test/ST=CA/C=US/O=Security/OU=OpenShift3,\r\n  #          A.
+      ROUTER_MUTUAL_TLS_AUTH_FILTER=\"header.test\"   OR\r\n  #             ROUTER_MUTUAL_TLS_AUTH_FILTER=\"head\"
+      \         OR\r\n  #             ROUTER_MUTUAL_TLS_AUTH_FILTER=\"^/CN=header.test/ST=CA/C=US/O=Security/OU=OpenShift3$\"
+      /* exact match example */\r\n  #             the filter would match the DN field
+      (substring or exact match)\r\n  #             and the request will be passed
+      on to the backend.\r\n  #          B. ROUTER_MUTUAL_TLS_AUTH_FILTER=\"legacy-web-client\",
+      the request\r\n  #             will be rejected.\r\n  acl cert_cn_matches ssl_c_s_dn
+      -m reg {{ . }}\r\n  http-request deny unless cert_cn_matches\r\n      {{- end
+      }}\r\n\r\n  # Add X-SSL* headers to pass client certificate information to the
+      backend.\r\n  http-request set-header X-SSL                  %[ssl_fc]\r\n  http-request
+      set-header X-SSL-Client-Verify    %[ssl_c_verify]\r\n  http-request set-header
+      X-SSL-Client-Serial    %{+Q}[ssl_c_serial,hex]\r\n  http-request set-header
+      X-SSL-Client-Version   %{+Q}[ssl_c_version]\r\n  http-request set-header X-SSL-Client-SHA1
+      \     %{+Q}[ssl_c_sha1,hex]\r\n  http-request set-header X-SSL-Client-DN        %{+Q}[ssl_c_s_dn]\r\n
+      \ http-request set-header X-SSL-Client-CN        %{+Q}[ssl_c_s_dn(cn)]\r\n  http-request
+      set-header X-SSL-Issuer           %{+Q}[ssl_c_i_dn]\r\n  http-request set-header
+      X-SSL-Client-NotBefore %{+Q}[ssl_c_notbefore]\r\n  http-request set-header X-SSL-Client-NotAfter
+      \ %{+Q}[ssl_c_notafter]\r\n  http-request set-header X-SSL-Client-DER       %{+Q}[ssl_c_der,base64]\r\n
+      \   {{- end }}\r\n\r\n  # map to backend\r\n  # Search from most specific to
+      general path (host case).\r\n  # Note: If no match, haproxy uses the default_backend,
+      no other\r\n  #       use_backend directives below this will be processed.\r\n
+      \ use_backend %[base,map_reg(/var/lib/haproxy/conf/os_edge_reencrypt_be.map)]\r\n\r\n
+      \ default_backend openshift_default\r\n\r\n##########################################################################\r\n#
+      END TLS SNI\r\n##########################################################################\r\n\r\n##########################################################################\r\n#
+      TLS NO SNI\r\n#\r\n# When we don't have SNI the only thing we can try to do
+      is terminate the encryption\r\n# using our wild card certificate.  Once that
+      is complete we can either re-encrypt\r\n# the traffic or pass it on to the backends\r\n##########################################################################\r\n#
+      backend for when sni does not exist, or ssl term needs to happen on the edge\r\nbackend
+      be_no_sni\r\n  server fe_no_sni unix@/var/lib/haproxy/run/haproxy-no-sni.sock
+      weight 1 send-proxy\r\n\r\nfrontend fe_no_sni\r\n  # terminate ssl on edge\r\n
+      \ bind unix@/var/lib/haproxy/run/haproxy-no-sni.sock ssl crt {{ firstMatch \".+\"
+      .DefaultCertificate \"/var/lib/haproxy/conf/default_pub_keys.pem\" }} accept-proxy\r\n
+      \   {{- with (env \"ROUTER_MUTUAL_TLS_AUTH\") }}\r\n      {{- \"\" }} verify
+      {{. }}\r\n      {{- if (ne (env \"ROUTER_MUTUAL_TLS_AUTH_CRL\") \"\") }}\r\n
+      \       {{- with (env \"ROUTER_MUTUAL_TLS_AUTH_CA\") }} ca-file {{. }} {{ else
+      }} ca-file /etc/ssl/certs/ca-bundle.trust.crt {{ end }}\r\n        {{- with
+      (env \"ROUTER_MUTUAL_TLS_AUTH_CRL\") }} crl-file {{. }} {{ end }}\r\n      {{-
+      else }}\r\n        {{- if $haveClientCA }} ca-file /var/lib/haproxy/mtls/latest/ca-bundle.pem
+      {{ else }} ca-file /etc/ssl/certs/ca-bundle.trust.crt {{ end }}\r\n        {{-
+      if $haveCRLs }} crl-file /var/lib/haproxy/mtls/latest/crls.pem {{ end }}\r\n
+      \     {{- end }}\r\n    {{- end }}\r\n  mode http\r\n\r\n    {{- range $idx,
+      $captureHeader := .CaptureHTTPRequestHeaders }}\r\n  capture request header
+      {{ $captureHeader.Name }} len {{ $captureHeader.MaxLength }}\r\n    {{- end
+      }}\r\n    {{- range $idx, $captureHeader := .CaptureHTTPResponseHeaders }}\r\n
+      \ capture response header {{ $captureHeader.Name }} len {{ $captureHeader.MaxLength
+      }}\r\n    {{- end }}\r\n    {{- with $captureCookie := .CaptureHTTPCookie }}\r\n
+      \ capture cookie {{ $captureCookie.Name }}{{ if eq $captureCookie.MatchType
+      \"exact\" }}={{ end }} len {{ $captureCookie.MaxLength }}\r\n    {{- end }}\r\n\r\n
+      \ # Strip off Proxy headers to prevent HTTpoxy (https://httpoxy.org/)\r\n  http-request
+      del-header Proxy\r\n\r\n  # DNS labels are case insensitive (RFC 4343), we need
+      to convert the hostname into lowercase\r\n  # before matching, or any requests
+      containing uppercase characters will never match.\r\n  http-request set-header
+      Host %[req.hdr(Host),lower]\r\n\r\n    {{- if and (ne (env \"ROUTER_UNIQUE_ID_FORMAT\")
+      \"\") (ne (env \"ROUTER_UNIQUE_ID_HEADER_NAME\") \"\") }}\r\n  unique-id-format
+      {{ env \"ROUTER_UNIQUE_ID_FORMAT\" }}\r\n  unique-id-header {{ env \"ROUTER_UNIQUE_ID_HEADER_NAME\"
+      }}\r\n    {{- end }}\r\n\r\n    {{ if ne (env \"ROUTER_MUTUAL_TLS_AUTH\" \"none\")
+      \"none\" }}\r\n      {{- with (env \"ROUTER_MUTUAL_TLS_AUTH_FILTER\") }}\r\n
+      \ # If a mutual TLS auth subject filter environment variable is set, we deny\r\n
+      \ # requests if the DN field in the client certificate doesn't match that value.\r\n
+      \ # Please note that this match is a regular expression match.\r\n  # See the
+      config section 'frontend fe_sni' for examples.\r\n  acl cert_cn_matches ssl_c_s_dn
+      -m reg {{ . }}\r\n  http-request deny unless cert_cn_matches\r\n      {{- end
+      }}\r\n\r\n  # Add X-SSL* headers to pass client certificate information to the
+      backend.\r\n  http-request set-header X-SSL                  %[ssl_fc]\r\n  http-request
+      set-header X-SSL-Client-Verify    %[ssl_c_verify]\r\n  http-request set-header
+      X-SSL-Client-Serial    %{+Q}[ssl_c_serial,hex]\r\n  http-request set-header
+      X-SSL-Client-Version   %{+Q}[ssl_c_version]\r\n  http-request set-header X-SSL-Client-SHA1
+      \     %{+Q}[ssl_c_sha1,hex]\r\n  http-request set-header X-SSL-Client-DN        %{+Q}[ssl_c_s_dn]\r\n
+      \ http-request set-header X-SSL-Client-CN        %{+Q}[ssl_c_s_dn(cn)]\r\n  http-request
+      set-header X-SSL-Issuer           %{+Q}[ssl_c_i_dn]\r\n  http-request set-header
+      X-SSL-Client-NotBefore %{+Q}[ssl_c_notbefore]\r\n  http-request set-header X-SSL-Client-NotAfter
+      \ %{+Q}[ssl_c_notafter]\r\n  http-request set-header X-SSL-Client-DER       %{+Q}[ssl_c_der,base64]\r\n
+      \   {{- end }}\r\n\r\n  # map to backend\r\n  # Search from most specific to
+      general path (host case).\r\n  # Note: If no match, haproxy uses the default_backend,
+      no other\r\n  #       use_backend directives below this will be processed.\r\n
+      \ use_backend %[base,map_reg(/var/lib/haproxy/conf/os_edge_reencrypt_be.map)]\r\n\r\n
+      \ default_backend openshift_default\r\n\r\n##########################################################################\r\n#
+      END TLS NO SNI\r\n##########################################################################\r\n\r\nbackend
+      openshift_default\r\n  mode http\r\n  option forwardfor\r\n  #option http-keep-alive\r\n
+      \ option http-pretend-keepalive\r\n  {{- if ne \"\" (env \"ROUTER_ERRORFILE_404\")
+      }}\r\n  http-request deny deny_status 404\r\n  {{-  end }}\r\n\r\n##--------------
+      app level backends ----------------\r\n    {{/*\r\n       1. If termination
+      is not set: This is plain http -> http.  Create a be_http:<service> backend.\r\n
+      \         Incoming http traffic is terminated and sent as http to the pods.\r\n\r\n
+      \      2. If termination is type 'edge': This is https -> http.  Create a be_edge_http:<service>
+      backend.\r\n          Incoming https traffic is terminated and sent as http
+      to the pods.\r\n\r\n       3. If termination is type 'reencrypt': This is https
+      -> https.  Create a be_secure:<service> backend.\r\n          Incoming https
+      traffic is terminated and then sent as https to the pods.\r\n\r\n       4. If
+      termination is type 'passthrough': This is https (or any SNI TLS connection)
+      passthrough.\r\n          Create a be_tcp:<service> backend.\r\n          Incoming
+      traffic is inspected to get the hostname from the SNI header, but then all traffic
+      is\r\n          passed through to the backend pod by just looking at the TCP
+      headers.\r\n*/}}\r\n    {{- range $cfgIdx, $cfg := .State }}\r\n      {{- if
+      matchValues (print $cfg.TLSTermination) \"\" \"edge\" \"reencrypt\" }}\r\n\r\n#
+      Plain http backend or backend with TLS terminated at the edge or a\r\n# secure
+      backend with re-encryption.\r\nbackend {{ genBackendNamePrefix $cfg.TLSTermination
+      }}:{{ $cfgIdx }}\r\n  mode http\r\n  option redispatch\r\n        {{- with $setHeaders
+      := firstMatch $setForwardedHeadersPattern (index $cfg.Annotations $setForwardedHeadersAnnotation)
+      $setForwardedHeadersDefaultValue }}\r\n          {{- if eq $setHeaders \"append\"
+      }}\r\n  option forwardfor\r\n          {{- else if eq $setHeaders \"if-none\"
+      }}\r\n  option forwardfor if-none\r\n          {{- end }}\r\n        {{- end
+      }}\r\n\r\n        {{- with $adjustments := $.HTTPHeaderNameCaseAdjustments }}\r\n
+      \         {{- if isTrue (index $cfg.Annotations \"haproxy.router.openshift.io/h1-adjust-case\")
+      }}\r\n  option h1-case-adjust-bogus-server\r\n          {{- end }}\r\n        {{-
+      end }}\r\n\r\n        {{- with $balanceAlgo := firstMatch $balanceAlgoPattern
+      (index $cfg.Annotations \"haproxy.router.openshift.io/balance\") }}\r\n  balance
+      {{ $balanceAlgo }}\r\n        {{- else }}\r\n  balance {{ if gt $cfg.ActiveServiceUnits
+      1 }}roundrobin{{ else }}{{ firstMatch $balanceAlgoPattern (env \"ROUTER_LOAD_BALANCE_ALGORITHM\")
+      \"random\" }}{{ end }}\r\n        {{- end }}\r\n        {{- with $ip_whiteList
+      := parseIPList (index $cfg.Annotations \"haproxy.router.openshift.io/ip_whitelist\")
+      }}\r\n          {{- if validateHAProxyWhiteList $ip_whiteList }}\r\n  acl whitelist
+      src {{ $ip_whiteList }}\r\n          {{- else }}\r\n            {{- with $whiteListFileName
+      := generateHAProxyWhiteListFile $workingDir $cfgIdx $ip_whiteList }}\r\n  acl
+      whitelist src -f {{ $whiteListFileName }}\r\n            {{- end }}\r\n          {{-
+      end }}\r\n  tcp-request content reject if !whitelist\r\n        {{- end }}\r\n
+      \       {{- with $value := clipHAProxyTimeoutValue (firstMatch $timeSpecPattern
+      (index $cfg.Annotations \"haproxy.router.openshift.io/timeout\")) }}\r\n  timeout
+      server  {{ $value }}\r\n        {{- end }}\r\n        {{- with $value := clipHAProxyTimeoutValue
+      (firstMatch $timeSpecPattern (index $cfg.Annotations \"haproxy.router.openshift.io/timeout-tunnel\"))
+      }}\r\n  timeout tunnel  {{ $value }}\r\n        {{- end }}\r\n\r\n        {{-
+      if isTrue (index $cfg.Annotations \"haproxy.router.openshift.io/rate-limit-connections\")
+      }}\r\n  stick-table type ip size 100k expire 30s store conn_cur,conn_rate(3s),http_req_rate(10s)\r\n
+      \ tcp-request content track-sc2 src\r\n          {{- if (isInteger (index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.concurrent-tcp\")) }}\r\n
+      \ tcp-request content reject if { src_conn_cur ge  {{ index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.concurrent-tcp\" }} }\r\n
+      \         {{- else }}\r\n  # concurrent TCP connections not restricted\r\n          {{-
+      end }}\r\n\r\n          {{- if (isInteger (index $cfg.Annotations \"haproxy.router.openshift.io/rate-limit-connections.rate-tcp\"))
+      }}\r\n  tcp-request content reject if { src_conn_rate ge {{ index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.rate-tcp\" }} }\r\n          {{-
+      else }}\r\n  #TCP connection rate not restricted\r\n          {{- end }}\r\n\r\n
+      \         {{- if (isInteger (index $cfg.Annotations \"haproxy.router.openshift.io/rate-limit-connections.rate-http\"))
+      }}\r\n  tcp-request content reject if { src_http_req_rate ge {{ index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.rate-http\" }} }\r\n          {{-
+      else }}\r\n  #HTTP request rate not restricted\r\n          {{- end }}\r\n        {{-
+      end }}\r\n\r\n  timeout check 5000ms\r\n        {{- with $setHeaders := firstMatch
+      $setForwardedHeadersPattern (index $cfg.Annotations $setForwardedHeadersAnnotation)
+      $setForwardedHeadersDefaultValue }}\r\n          {{- if eq $setHeaders \"append\"
+      }}\r\n            {{- /* X-Forwarded-For: is handled by \"option forwardfor\"
+      above.  */}}\r\n  http-request add-header X-Forwarded-Host %[req.hdr(host)]\r\n
+      \ http-request add-header X-Forwarded-Port %[dst_port]\r\n  http-request add-header
+      X-Forwarded-Proto http if !{ ssl_fc }\r\n  http-request add-header X-Forwarded-Proto
+      https if { ssl_fc }\r\n  http-request add-header X-Forwarded-Proto-Version h2
+      if { ssl_fc_alpn -i h2 }\r\n            {{- if eq \"v4v6\" $router_ip_v4_v6_mode
+      }}\r\n  # See the quoting rules in https://tools.ietf.org/html/rfc7239 for IPv6
+      addresses (v4 addresses get translated to v6 when in hybrid mode)\r\n  acl ipv6_addr
+      src -m sub :\r\n  http-request add-header Forwarded for=\\\"[%[src]]\\\";host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if ipv6_addr\r\n  http-request add-header Forwarded for=%[src];host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if !ipv6_addr\r\n            {{- else if eq \"v6\" $router_ip_v4_v6_mode }}\r\n
+      \ http-request add-header Forwarded for=\\\"[%[src]]\\\";host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]\r\n
+      \           {{- else }}\r\n  http-request add-header Forwarded for=%[src];host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]\r\n
+      \           {{- end }}\r\n          {{- else if eq $setHeaders \"replace\" }}\r\n
+      \ http-request set-header X-Forwarded-For %[src]\r\n  http-request set-header
+      X-Forwarded-Host %[req.hdr(host)]\r\n  http-request set-header X-Forwarded-Port
+      %[dst_port]\r\n  http-request set-header X-Forwarded-Proto http if !{ ssl_fc
+      }\r\n  http-request set-header X-Forwarded-Proto https if { ssl_fc }\r\n  http-request
+      set-header X-Forwarded-Proto-Version h2 if { ssl_fc_alpn -i h2 }\r\n            {{-
+      if eq \"v4v6\" $router_ip_v4_v6_mode }}\r\n  # See the quoting rules in https://tools.ietf.org/html/rfc7239
+      for IPv6 addresses (v4 addresses get translated to v6 when in hybrid mode)\r\n
+      \ acl ipv6_addr src -m sub :\r\n  http-request set-header Forwarded for=\\\"[%[src]]\\\";host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if ipv6_addr\r\n  http-request set-header Forwarded for=%[src];host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if !ipv6_addr\r\n            {{- else if eq \"v6\" $router_ip_v4_v6_mode }}\r\n
+      \ http-request set-header Forwarded for=\\\"[%[src]]\\\";host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]\r\n
+      \           {{- else }}\r\n  http-request set-header Forwarded for=%[src];host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]\r\n
+      \           {{- end }}\r\n          {{- else if eq $setHeaders \"if-none\" }}\r\n
+      \           {{- /* X-Forwarded-For: is handled by \"option forwardfor if-none\"
+      above.  */}}\r\n  http-request set-header X-Forwarded-Host %[req.hdr(host)]
+      if !{ req.hdr(X-Forwarded-Host) -m found }\r\n  http-request set-header X-Forwarded-Port
+      %[dst_port] if !{ req.hdr(X-Forwarded-Port) -m found }\r\n  http-request set-header
+      X-Forwarded-Proto http if !{ ssl_fc } !{ req.hdr(X-Forwarded-Proto) -m found
+      }\r\n  http-request set-header X-Forwarded-Proto https if { ssl_fc } !{ req.hdr(X-Forwarded-Proto)
+      -m found }\r\n  http-request set-header X-Forwarded-Proto-Version h2 if { ssl_fc_alpn
+      -i h2 } !{ req.hdr(X-Forwarded-Proto-Version) -m found }\r\n            {{-
+      if eq \"v4v6\" $router_ip_v4_v6_mode }}\r\n  # See the quoting rules in https://tools.ietf.org/html/rfc7239
+      for IPv6 addresses (v4 addresses get translated to v6 when in hybrid mode)\r\n
+      \ acl ipv6_addr src -m sub :\r\n  http-request set-header Forwarded for=\\\"[%[src]]\\\";host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if ipv6_addr !{ req.hdr(Forwarded) -m found }\r\n  http-request set-header Forwarded
+      for=%[src];host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)] if !ipv6_addr
+      !{ req.hdr(Forwarded) -m found }\r\n            {{- else if eq \"v6\" $router_ip_v4_v6_mode
+      }}\r\n  http-request set-header Forwarded for=\\\"[%[src]]\\\";host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if !{ req.hdr(Forwarded) -m found }\r\n            {{- else }}\r\n  http-request
+      set-header Forwarded for=%[src];host=%[req.hdr(host)];proto=%[req.hdr(X-Forwarded-Proto)]
+      if !{ req.hdr(Forwarded) -m found }\r\n            {{- end }}\r\n          {{-
+      else if eq $setHeaders \"never\" }}\r\n            {{- /* No Forward headers
+      set.  */}}\r\n          {{- end }}\r\n        {{- end }}\r\n\r\n        {{-
+      with $pathRewriteTarget := firstMatch $pathRewriteTargetPattern (index $cfg.Annotations
+      \"haproxy.router.openshift.io/rewrite-target\") }}\r\n  # Path rewrite target\r\n
+      \         {{- if eq $pathRewriteTarget \"/\" }}\r\n  http-request replace-path
+      ^{{ $cfg.Path }}/?(.*)$ {{ $pathRewriteTarget }}\\1\r\n          {{- else }}\r\n
+      \ http-request replace-path ^{{ $cfg.Path }}(.*)$ {{ $pathRewriteTarget }}\\1\r\n
+      \         {{- end }}\r\n        {{- end }}{{/* rewrite target */}}\r\n  \r\n
+      \       {{- if not (isTrue (index $cfg.Annotations \"haproxy.router.openshift.io/disable_cookies\"))
+      }}\r\n  cookie {{ firstMatch $cookieNamePattern (index $cfg.Annotations \"router.openshift.io/cookie_name\")
+      (env \"ROUTER_COOKIE_NAME\" \"\") $cfg.RoutingKeyName }} insert indirect nocache
+      httponly\r\n          {{- if and (matchValues (print $cfg.TLSTermination) \"edge\"
+      \"reencrypt\") (ne $cfg.InsecureEdgeTerminationPolicy \"Allow\") }}\r\n            {{-
+      with $samesite := firstMatch \"Lax|Strict|None\" (index $cfg.Annotations \"router.openshift.io/cookie-same-site\")
+      \"None\" }}\r\n              {{- \"\" }} secure attr SameSite={{ $samesite }}\r\n
+      \           {{- end }}\r\n          {{- end }}\r\n        {{- end }}{{/* end
+      disable cookies check */}}\r\n\r\n        {{- if matchValues (print $cfg.TLSTermination)
+      \"edge\" \"reencrypt\" }}\r\n          {{- with $hsts := firstMatch $hstsPattern
+      (index $cfg.Annotations \"haproxy.router.openshift.io/hsts_header\") }}\r\n
+      \ http-response set-header Strict-Transport-Security '{{ $hsts }}'\r\n          {{-
+      end }}{{/* hsts header */}}\r\n        {{- end }}{{/* is \"edge\" or \"reencrypt\"
+      */}}\r\n\r\n        {{- range $serviceUnitName, $weight := $cfg.ServiceUnitNames
+      }}\r\n          {{- if ge $weight 0 }}{{/* weight=0 is reasonable to keep existing
+      connections to backends with cookies as we can see the HTTP headers */}}\r\n
+      \           {{- with $serviceUnit := index $.ServiceUnits $serviceUnitName }}\r\n
+      \             {{- range $idx, $endpoint := processEndpointsForAlias $cfg $serviceUnit
+      (env \"ROUTER_BACKEND_PROCESS_ENDPOINTS\" \"\") }}\r\n  server {{ $endpoint.ID
+      }} {{ $endpoint.IP }}:{{ $endpoint.Port }} cookie {{ $endpoint.IdHash }} weight
+      {{ $weight }}\r\n                {{- if (eq $cfg.TLSTermination \"reencrypt\")
+      }} ssl\r\n                  {{- if not (isTrue $router_disable_http2) }} alpn
+      h2,http/1.1\r\n                  {{- end }}\r\n                  {{- if $cfg.VerifyServiceHostname
+      }} verifyhost {{ $serviceUnit.Hostname }}\r\n                  {{- end }}\r\n
+      \                 {{- if gt (len (index $cfg.Certificates (printf \"%s_pod\"
+      $cfg.Host)).Contents) 0 }} verify required ca-file {{ $workingDir }}/router/cacerts/{{$cfgIdx
+      }}.pem\r\n                  {{- else }}\r\n                    {{- if gt (len
+      $defaultDestinationCA) 0 }} verify required ca-file {{ $defaultDestinationCA
+      }}\r\n                    {{- else }} verify none\r\n                    {{-
+      end }}\r\n                  {{- end }}\r\n                {{- else if or (eq
+      $cfg.TLSTermination \"\") (eq $cfg.TLSTermination \"edge\") }}\r\n                  {{-
+      if eq $endpoint.AppProtocol \"h2c\" }} proto h2\r\n                  {{- end
+      }}\r\n                {{- end }}{{/* end type specific options*/}}\r\n\r\n                {{-
+      if and (not $endpoint.NoHealthCheck) (gt $cfg.ActiveEndpoints 1) }} check inter
+      {{firstMatch $timeSpecPattern (index $cfg.Annotations \"router.openshift.io/haproxy.health.check.interval\")
+      (env \"ROUTER_BACKEND_CHECK_INTERVAL\") \"5000ms\" }}\r\n                {{-
+      end }}{{/* end else no health check */}}\r\n                {{- with $podMaxConn
+      := index $cfg.Annotations \"haproxy.router.openshift.io/pod-concurrent-connections\"
+      }}\r\n                {{- if (isInteger (index $cfg.Annotations \"haproxy.router.openshift.io/pod-concurrent-connections\"))
+      }} maxconn {{$podMaxConn }} {{- end }}\r\n                {{- end }}{{/* end
+      pod-concurrent-connections annotation */}}\r\n\r\n              {{- end }}{{/*
+      end if cg.TLSTermination */}}\r\n            {{- end }}{{/* end range processEndpointsForAlias
+      */}}\r\n          {{- end }}{{/* end get serviceUnit from its name */}}\r\n
+      \       {{- end }}{{/* end range over serviceUnitNames */}}\r\n\r\n        {{-
+      with $dynamicConfigManager }}\r\n          {{- if (eq $cfg.TLSTermination \"reencrypt\")
+      }}\r\n            {{- range $idx, $serverName := $dynamicConfigManager.GenerateDynamicServerNames
+      $cfgIdx }}\r\n  server {{ $serverName }} 172.4.0.4:8765 weight 0 ssl disabled
+      check inter {{ firstMatch $timeSpecPattern (index $cfg.Annotations \"router.openshift.io/haproxy.health.check.interval\")
+      (env \"ROUTER_BACKEND_CHECK_INTERVAL\") \"5000ms\" }}\r\n              {{- if
+      gt (len (index $cfg.Certificates (printf \"%s_pod\" $cfg.Host)).Contents) 0
+      }} verify required ca-file {{ $workingDir }}/router/cacerts/{{$cfgIdx }}.pem\r\n
+      \             {{- else }}\r\n                {{- if gt (len $defaultDestinationCA)
+      0 }} verify required ca-file {{ $defaultDestinationCA }}\r\n                {{-
+      else }} verify none\r\n                {{- end }}\r\n              {{- end }}\r\n
+      \             {{- with $podMaxConn := index $cfg.Annotations \"haproxy.router.openshift.io/pod-concurrent-connections\"
+      }}\r\n              {{- if (isInteger (index $cfg.Annotations \"haproxy.router.openshift.io/pod-concurrent-connections\"))
+      }} maxconn {{$podMaxConn }} {{- end }}\r\n              {{- end }}{{/* end pod-concurrent-connections
+      annotation */}}\r\n            {{- end }}{{/* end range over dynamic server
+      names */}}\r\n\r\n          {{- else }}\r\n            {{- with $name := $dynamicConfigManager.ServerTemplateName
+      $cfgIdx }}\r\n              {{- with $size := $dynamicConfigManager.ServerTemplateSize
+      $cfgIdx }}\r\n  dynamic-cookie-key {{ $cfg.RoutingKeyName }}\r\n  server-template
+      {{ $name }}- 1-{{ $size }} 172.4.0.4:8765 check disabled\r\n              {{-
+      end }}\r\n            {{- end }}\r\n          {{- end }}\r\n        {{- end
+      }}\r\n\r\n      {{- end }}{{/* end if tls==edge/none/reencrypt */}}\r\n\r\n
+      \     {{- if eq $cfg.TLSTermination \"passthrough\" }}\r\n\r\n# Secure backend,
+      pass through\r\nbackend {{ genBackendNamePrefix $cfg.TLSTermination }}:{{ $cfgIdx
+      }}\r\n        {{- with $balanceAlgo := firstMatch $balanceAlgoPattern (index
+      $cfg.Annotations \"haproxy.router.openshift.io/balance\") }}\r\n  balance {{
+      $balanceAlgo }}\r\n        {{- else }}\r\n  balance {{ if gt $cfg.ActiveServiceUnits
+      1 }}roundrobin{{ else }}{{ firstMatch $balanceAlgoPattern (env \"ROUTER_TCP_BALANCE_SCHEME\")
+      (env \"ROUTER_LOAD_BALANCE_ALGORITHM\") \"source\" }}{{ end }}\r\n        {{-
+      end }}\r\n        {{- with $ip_whiteList := parseIPList (index $cfg.Annotations
+      \"haproxy.router.openshift.io/ip_whitelist\") }}\r\n          {{- if validateHAProxyWhiteList
+      $ip_whiteList }}\r\n  acl whitelist src {{ $ip_whiteList }}\r\n          {{-
+      else }}\r\n            {{- with $whiteListFileName := generateHAProxyWhiteListFile
+      $workingDir $cfgIdx $ip_whiteList }}\r\n  acl whitelist src -f {{ $whiteListFileName
+      }}\r\n            {{- end }}\r\n          {{- end }}\r\n  tcp-request content
+      reject if !whitelist\r\n        {{- end }}\r\n        {{- with $value := clipHAProxyTimeoutValue
+      (firstMatch $timeSpecPattern (index $cfg.Annotations \"haproxy.router.openshift.io/timeout-tunnel\")
+      (index $cfg.Annotations \"haproxy.router.openshift.io/timeout\")) }}\r\n  timeout
+      tunnel  {{ $value }}\r\n        {{- end }}\r\n\r\n        {{- if isTrue (index
+      $cfg.Annotations \"haproxy.router.openshift.io/rate-limit-connections\") }}\r\n
+      \ stick-table type ip size 100k expire 30s store conn_cur,conn_rate(3s),http_req_rate(10s)\r\n
+      \ tcp-request content track-sc2 src\r\n          {{- if (isInteger (index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.concurrent-tcp\")) }}\r\n
+      \ tcp-request content reject if { src_conn_cur ge  {{ index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.concurrent-tcp\" }} }\r\n
+      \         {{- else }}\r\n  # concurrent TCP connections not restricted\r\n          {{-
+      end }}\r\n\r\n          {{- if (isInteger (index $cfg.Annotations \"haproxy.router.openshift.io/rate-limit-connections.rate-tcp\"))
+      }}\r\n  tcp-request content reject if { src_conn_rate ge {{ index $cfg.Annotations
+      \"haproxy.router.openshift.io/rate-limit-connections.rate-tcp\" }} }\r\n          {{-
+      else }}\r\n  #TCP connection rate not restricted\r\n          {{- end }}\r\n
+      \       {{- end }}\r\n\r\n  hash-type consistent\r\n  timeout check 5000ms\r\n
+      \       {{- range $serviceUnitName, $weight := $cfg.ServiceUnitNames }}\r\n
+      \         {{- if ne $weight 0 }}{{/* drop connections where weight=0 as we can't
+      use cookies, leaving only r-r and src-ip as dispatch methods and weight make
+      no sense there */}}\r\n            {{- with $serviceUnit := index $.ServiceUnits
+      $serviceUnitName }}\r\n              {{- range $idx, $endpoint := processEndpointsForAlias
+      $cfg $serviceUnit (env \"ROUTER_BACKEND_PROCESS_ENDPOINTS\" \"\") }}\r\n  server
+      {{ $endpoint.ID }} {{ $endpoint.IP }}:{{ $endpoint.Port }} weight {{ $weight
+      }}\r\n                {{- if and (not $endpoint.NoHealthCheck) (gt $cfg.ActiveEndpoints
+      1) }} check inter {{firstMatch $timeSpecPattern (index $cfg.Annotations \"router.openshift.io/haproxy.health.check.interval\")
+      (env \"ROUTER_BACKEND_CHECK_INTERVAL\") \"5000ms\" }}\r\n                {{-
+      end }}{{/* end else no health check */}}\r\n                {{- with $podMaxConn
+      := index $cfg.Annotations \"haproxy.router.openshift.io/pod-concurrent-connections\"
+      }}\r\n                {{- if (isInteger (index $cfg.Annotations \"haproxy.router.openshift.io/pod-concurrent-connections\"))
+      }} maxconn {{$podMaxConn }} {{- end }}\r\n                {{- end }}{{/* end
+      pod-concurrent-connections annotation */}}\r\n\r\n              {{- end }}{{/*
+      end range processEndpointsForAlias */}}\r\n            {{- end }}{{/* end get
+      ServiceUnit from serviceUnitName */}}\r\n          {{- end }}{{/* end if weight
+      != 0 */}}\r\n        {{- end }}{{/* end iterate over services*/}}\r\n\r\n        {{-
+      with $dynamicConfigManager }}\r\n          {{- with $name := $dynamicConfigManager.ServerTemplateName
+      $cfgIdx }}\r\n            {{- with $size := $dynamicConfigManager.ServerTemplateSize
+      $cfgIdx }}\r\n  dynamic-cookie-key {{ $cfg.RoutingKeyName }}\r\n  server-template
+      {{ $name }}- 1-{{ $size }} 172.4.0.4:8765 check disabled\r\n            {{-
+      end }}\r\n          {{- end }}\r\n        {{- end }}\r\n\r\n      {{- end }}{{/*end
+      tls==passthrough*/}}\r\n\r\n    {{- end }}{{/* end loop over routes */}}\r\n
+      \ {{- else }}\r\n# Avoiding binding ports until routing configuration has been
+      synchronized.\r\n  {{- end }}{{/* end bind ports after sync */}}\r\n{{ end }}{{/*
+      end haproxy config template */}}\r\n\r\n{{/*---------------------------------
+      END OF HAPROXY CONFIG, BELOW ARE MAPPING FILES ------------------------*/}}\r\n{{/*\r\n
+      \   os_wildcard_domain.map: contains a mapping of wildcard hosts for a\r\n\t\t\t[sub]domain
+      regexps. This map is used to check if\r\n\t\t\ta host matches a [sub]domain
+      with has wildcard support.\r\n*/}}\r\n{{ define \"conf/os_wildcard_domain.map\"
+      -}}\r\n{{ if isTrue (env \"ROUTER_ALLOW_WILDCARD_ROUTES\") -}}\r\n  {{ range
+      $idx, $line := generateHAProxyMap . -}}\r\n    {{ $line }}\r\n  {{ end -}}\r\n{{
+      end -}}{{/* end if router allows wildcard routes */ -}}\r\n{{ end -}}{{/* end
+      wildcard domain map template */}}\r\n\r\n\r\n{{/*\r\n    os_http_be.map : contains
+      a mapping of www.example.com -> <service name>. This map is used to discover
+      the correct backend\r\n                         by attaching a prefix: be_http
+      for http routes\r\n                                                be_edge_http
+      for edge routes with InsecureEdgeTerminationPolicy Allow\r\n                                                be_secure
+      for reencrypt routes with InsecureEdgeTerminationPolicy Allow\r\n*/}}\r\n{{
+      define \"conf/os_http_be.map\" -}}\r\n{{ range $idx, $line := generateHAProxyMap
+      . -}}\r\n  {{ $line }}\r\n{{ end -}}\r\n{{ end -}}{{/* end http host map template
+      */}}\r\n\r\n\r\n\r\n{{/*\r\n    os_edge_reencrypt_be.map : contains a mapping
+      of www.example.com -> <service name>. This map is similar to os_http_be.map
+      but for tls routes.\r\n                         by attaching prefix: be_edge_http
+      for edge terminated routes\r\n                                              be_secure
+      for reencrypt routes\r\n*/}}\r\n{{ define \"conf/os_edge_reencrypt_be.map\"
+      -}}\r\n{{ range $idx, $line := generateHAProxyMap . -}}\r\n  {{ $line }}\r\n{{
+      end -}}\r\n{{ end -}}{{/* end edge http host map template */}}\r\n\r\n\r\n{{/*\r\n
+      \   os_route_http_redirect.map: contains a mapping of www.example.com -> <service
+      name>.\r\n    Map is used to redirect insecure traffic to use a secure scheme
+      (https)\r\n    if acls match for routes that have the insecure option set to
+      redirect.\r\n*/}}\r\n{{ define \"conf/os_route_http_redirect.map\" -}}\r\n{{
+      range $idx, $line := generateHAProxyMap . -}}\r\n  {{ $line }}\r\n{{ end -}}\r\n{{
+      end -}}{{/* end redirect http host map template */}}\r\n\r\n\r\n{{/*\r\n    os_tcp_be.map:
+      contains a mapping of www.example.com -> <service name>.  This map is used to
+      discover the correct backend\r\n                        by use_backend statements
+      if acls are matched.\r\n*/}}\r\n{{ define \"conf/os_tcp_be.map\" -}}\r\n{{ range
+      $idx, $line := generateHAProxyMap . -}}\r\n  {{ $line }}\r\n{{ end -}}\r\n{{
+      end -}}{{/* end tcp host map template */}}\r\n\r\n\r\n{{/*\r\n    os_sni_passthrough.map:
+      contains a mapping of routes that expect to have an sni header and should be
+      passed\r\n    \t\t\t\t\tthrough to the host_be.  Driven by the termination type
+      of the ServiceAliasConfigs\r\n*/}}\r\n{{ define \"conf/os_sni_passthrough.map\"
+      -}}\r\n{{ range $idx, $line := generateHAProxyMap . -}}\r\n  {{ $line }}\r\n{{
+      end -}}\r\n{{ end -}}{{/* end sni passthrough map template */}}\r\n\r\n{{/*\r\n
+      \   cert_config.map: contains a mapping of <cert-file> -> example.org\r\n                     This
+      map is used to present the appropriate cert\r\n                     based on
+      the sni header.\r\n    Note: It is sort of a reverse map for our case but the
+      order\r\n          \"<cert>: <domain-set>\" is important as this allows us to
+      use\r\n         wildcards and/or use a deny set with !<domain> in the future.\r\n*/}}\r\n{{
+      define \"conf/cert_config.map\" -}}\r\n{{ range $idx, $line := generateHAProxyMap
+      . -}}\r\n  {{ $line }}\r\n{{ end -}}\r\n{{ end -}}{{/* end cert_config map template
+      */}}\r\n"
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2023-10-12T11:39:44Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:haproxy-config.template: {}
+      manager: kubectl-create
+      operation: Update
+      time: "2023-10-12T11:39:44Z"
+    name: router-template
+    namespace: openshift-ingress
+    resourceVersion: "23711052"
+    uid: cc86bb52-f56e-496f-800c-c8aa1f54ad5f
+- apiVersion: v1
+  data:
+    service-ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDUTCCAjmgAwIBAgIIDLXwHZxdwHgwDQYJKoZIhvcNAQELBQAwNjE0MDIGA1UE
+      Awwrb3BlbnNoaWZ0LXNlcnZpY2Utc2VydmluZy1zaWduZXJAMTY5MzQ5OTIzODAe
+      Fw0yMzA4MzExNjI3MTdaFw0yNTEwMjkxNjI3MThaMDYxNDAyBgNVBAMMK29wZW5z
+      aGlmdC1zZXJ2aWNlLXNlcnZpbmctc2lnbmVyQDE2OTM0OTkyMzgwggEiMA0GCSqG
+      SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCr5iB0VsfJMaZLoO0M2sCdhqFn7JRGmdlI
+      s4roWLTEggqd6VeMybsfb9K5CwqvzWYBT3Dt0XBoq6kbHpx6ir+japRKj/dh87Zx
+      m/LI9CczQwJF84Nl2F8wKRFNHOCGIRY1E+zyeZzZuzHuhVdch6QsvE73ggw8WDNy
+      w0sCtv/3YUvM7RH5kI0AA9/nDdU+ICh5kk/5mOBkpVwvu6xjWMGg4jFIpSveVPQp
+      xy7GUQ28Vf4ffcfnIeNJqnK3OLvCkP7M0ZqYdJgRauB3EdkwXaDQki9OJFHdY9gL
+      elW44w6e41IAyLdp6pqWR5vA0QFer2/oogX2TW+Zkgekqexk2/lzAgMBAAGjYzBh
+      MA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQRz+25
+      Kq3A4AYo6GG87IHoBWHIIDAfBgNVHSMEGDAWgBQRz+25Kq3A4AYo6GG87IHoBWHI
+      IDANBgkqhkiG9w0BAQsFAAOCAQEAk9GDOkfnwk1D//TDh+a+lXkgEynci5MU/Eyw
+      WfffpZW7Tyj2KUEQLkDnfO8QPgVSQlzREXUzwXoxKBQ0cJgOjgILp71ke9LENwdx
+      IAHdgwHdFp9VlgKYFLn+cd725VxkUIqnT/GlTuHXXer4AoL19I65ABtRYtPOp16r
+      xmrRF4dnKMs2gNO5wtQAqH8Ca6k5okX7jhtTJVa4BTFpvKLhxBo0uycXNhT3+63o
+      dRBr+l4E314gmEw+s2yy20+lEkr32SH6HBbOcAtO5wzH5PuCpNR/XqCs7bwH3rVv
+      A809dVNsUB5hE2kxprCs/AdbdMFaoaIn8b7k+BpwsPJTwS59qw==
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      description: ConfigMap providing service CA bundle.
+      service.beta.openshift.io/inject-cabundle: "true"
+    creationTimestamp: "2023-08-31T16:28:36Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:description: {}
+            f:service.beta.openshift.io/inject-cabundle: {}
+      manager: ingress-operator
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:service-ca.crt: {}
+      manager: service-ca-operator
+      operation: Update
+      time: "2023-08-31T16:28:36Z"
+    name: service-ca-bundle
+    namespace: openshift-ingress
+    resourceVersion: "9403"
+    uid: 1c4fcfde-d641-4c7a-b547-b1f755a32439
+kind: ConfigMapList
+metadata:
+  resourceVersion: "30130882"
