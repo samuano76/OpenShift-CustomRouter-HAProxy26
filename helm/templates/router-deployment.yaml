@@ -194,6 +194,10 @@ spec:
       serviceAccount: router
       serviceAccountName: router
       terminationGracePeriodSeconds: 3600
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       topologySpreadConstraints:
       - labelSelector:
           matchExpressions:

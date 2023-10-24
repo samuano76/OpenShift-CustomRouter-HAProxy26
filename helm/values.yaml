@@ -12,6 +12,7 @@ nodeSelector:
   node-role.kubernetes.io/worker: ""
 #  router-sharded: "yes"
 routeLabels: type=sharded
+tolerations: []
 service:
 #  useInternalLB: aws
   annotations:
